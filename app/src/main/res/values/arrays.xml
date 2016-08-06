@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sex_spinner">
+        <item>남성</item>
+        <item>여성</item>
+
+    </string-array>
+
+    <string-array name="alcol_spinner">
+        <item>소주</item>
+        <item>맥주</item>
+        <item>양주</item>
+    </string-array>
+
+
+</resources>

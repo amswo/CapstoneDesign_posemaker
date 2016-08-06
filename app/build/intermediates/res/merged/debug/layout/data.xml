@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffffff">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DB생성"
+            android:id="@+id/btnCreateDatabase"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="52dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA생성"
+            android:id="@+id/btnInsertData"
+            android:layout_alignTop="@+id/btnCreateDatabase"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA 가져오기"
+            android:id="@+id/btnSelectAllDatas"
+            android:layout_alignTop="@+id/btnInsertData"
+            android:layout_alignParentRight="true" />
+
+
+
+
+    <ListView
+        android:id="@+id/IvPoses"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="339dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+    </ListView>
+
+
+</RelativeLayout>
