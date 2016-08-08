@@ -13,18 +13,18 @@ public final class R {
 		public static final int imageAspectRatioAdjust = 0x7f01005c;
 	}
 	public static final class color {
-		public static final int common_action_bar_splitter = 0x7f0b0003;
-		public static final int common_signin_btn_dark_text_default = 0x7f0b0004;
-		public static final int common_signin_btn_dark_text_disabled = 0x7f0b0005;
-		public static final int common_signin_btn_dark_text_focused = 0x7f0b0006;
-		public static final int common_signin_btn_dark_text_pressed = 0x7f0b0007;
-		public static final int common_signin_btn_default_background = 0x7f0b0008;
-		public static final int common_signin_btn_light_text_default = 0x7f0b0009;
-		public static final int common_signin_btn_light_text_disabled = 0x7f0b000a;
-		public static final int common_signin_btn_light_text_focused = 0x7f0b000b;
-		public static final int common_signin_btn_light_text_pressed = 0x7f0b000c;
-		public static final int common_signin_btn_text_dark = 0x7f0b000e;
-		public static final int common_signin_btn_text_light = 0x7f0b000f;
+		public static final int common_action_bar_splitter = 0x7f0b0006;
+		public static final int common_signin_btn_dark_text_default = 0x7f0b0007;
+		public static final int common_signin_btn_dark_text_disabled = 0x7f0b0008;
+		public static final int common_signin_btn_dark_text_focused = 0x7f0b0009;
+		public static final int common_signin_btn_dark_text_pressed = 0x7f0b000a;
+		public static final int common_signin_btn_default_background = 0x7f0b000b;
+		public static final int common_signin_btn_light_text_default = 0x7f0b000c;
+		public static final int common_signin_btn_light_text_disabled = 0x7f0b000d;
+		public static final int common_signin_btn_light_text_focused = 0x7f0b000e;
+		public static final int common_signin_btn_light_text_pressed = 0x7f0b000f;
+		public static final int common_signin_btn_text_dark = 0x7f0b0011;
+		public static final int common_signin_btn_text_light = 0x7f0b0012;
 	}
 	public static final class drawable {
 		public static final int common_full_open_on_phone = 0x7f020058;

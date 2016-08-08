@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:17:1-57:12
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:17:1-54:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:18:5-48
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
@@ -23,8 +23,16 @@ uses-permission#android.permission.BLUETOOTH
 ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:24:5-68
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:24:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:26:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:27:5-80
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:27:22-77
 application
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:26:5-55:19
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:28:5-52:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
@@ -32,60 +40,53 @@ MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\us
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:28:9-41
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:30:9-41
 	android:icon
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:27:9-42
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:29:9-42
 activity#com.example.android.BluetoothChat.MainActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:29:9-39:20
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:31:9-41:20
 	android:screenOrientation
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:35:13-49
 	android:label
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:32:13-45
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:34:13-45
 	android:configChanges
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:31:13-63
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:32:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:39:27-74
 activity#com.example.android.BluetoothChat.DeviceListActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:40:9-45:59
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:42:9-47:59
 	android:screenOrientation
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:44:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:46:13-49
 	android:label
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:43:13-50
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:45:13-50
 	android:configChanges
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:42:13-63
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:44:13-63
 	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:45:13-56
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:47:13-56
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:13-47
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:43:13-47
 activity#com.example.android.BluetoothChat.DataActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:46:9-59
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:9-59
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:46:19-47
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:19-47
 activity#com.example.android.BluetoothChat.LoginActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:47:9-60
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:49:9-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:47:19-48
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:49:19-48
 activity#com.example.android.BluetoothChat.SignupActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:9-61
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:50:9-61
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:19-49
-meta-data#com.google.android.gms.version
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:51:9-53:69
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:53:13-66
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:52:13-58
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:50:19-49
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:16:5-42
@@ -97,3 +98,9 @@ MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioP
 	android:minSdkVersion
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:22:13-58

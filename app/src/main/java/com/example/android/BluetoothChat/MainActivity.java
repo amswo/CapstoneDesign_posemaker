@@ -20,6 +20,7 @@ import android.annotation.SuppressLint;
 import android.app.*;
 import android.bluetooth.*;
 import android.content.*;
+import android.net.Uri;
 import android.os.*;
 import android.util.*;
 import android.view.*;
@@ -36,6 +37,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -228,6 +230,42 @@ public class MainActivity extends Activity {
         });
 
 
+        // 이메일로 data 전송하기
+        Button btnEmail = (Button) findViewById(R.id.btnEmail);
+
+        // 전송할 파일의 경로
+        String szSendFilePath = "/data/data/com.example.android.BluetoothChat/test.db";
+//        String szSendFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/test.db"; // 나중에 DB파일 보낼 때 파일명 수정하면 된다. 예) test.db , test.sqlite
+        File f = new File(szSendFilePath);
+        if (!f.exists()) {
+            Toast.makeText(this, "파일이 없습니다.", Toast.LENGTH_SHORT).show();
+        }
+
+        // File객체로부터 Uri값 생성
+        final Uri fileUri = Uri.fromFile(f);
+
+        /** 첨부파일 이메일 보내기 */
+        btnEmail.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Intent.ACTION_SEND);
+                it.setType("plain/text");
+
+                // 수신인 주소 - tos배열의 값을 늘릴 경우 다수의 수신자에게 발송됨
+                // tos 부분을 로그인DB의 emailAddress로
+                String[] tos = {"amswo@naver.com"};
+                it.putExtra(Intent.EXTRA_EMAIL, tos);
+
+                it.putExtra(Intent.EXTRA_SUBJECT, "The email subject text");
+                it.putExtra(Intent.EXTRA_TEXT, "The email body text");
+
+                // 파일첨부
+                it.putExtra(Intent.EXTRA_STREAM, fileUri);
+
+                startActivity(it);
+            }
+        });
+
+
     }
 
 
@@ -236,29 +274,30 @@ public class MainActivity extends Activity {
     public void onStart() {
         super.onStart();
 
-        // If BT is not on, request that it be enabled.
-        // setupChat() will then be called during onActivityResult
-        if (!mBluetoothAdapter.isEnabled()) 
-        {   
-          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            
-     
-          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-        // Otherwise, setup the chat session
-        } 
-        else {
-            if (mChatService == null) setupChat();
-        }
-
-        // mode1 버튼이 눌렸을 때
-        findViewById(R.id.btnStart).setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-                        Log.d("TX", "start");
-                        sendMessage1((byte) 'a');
-                    }
-                }
-        );
+        // 블루투스 기능 잠시 꺼놓음
+//        // If BT is not on, request that it be enabled.
+//        // setupChat() will then be called during onActivityResult
+//        if (!mBluetoothAdapter.isEnabled())
+//        {
+//          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//
+//
+//          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+//        // Otherwise, setup the chat session
+//        }
+//        else {
+//            if (mChatService == null) setupChat();
+//        }
+//
+//        // mode1 버튼이 눌렸을 때
+//        findViewById(R.id.btnStart).setOnClickListener(
+//                new Button.OnClickListener() {
+//                    public void onClick(View v) {
+//                        Log.d("TX", "start");
+//                        sendMessage1((byte) 'a');
+//                    }
+//                }
+//        );
     }
 
     @Override
@@ -516,6 +555,36 @@ public class MainActivity extends Activity {
         public TextView tvAz;
     }
 
+
+    public void sqliteExport(){
+        try {
+            File sdDir = Environment.getExternalStorageDirectory();
+            File dataDir = Environment.getDataDirectory();
+
+            if(sdDir.canWrite()){
+                String crDBPath = "//data//com.example.android.BluetoothChat/databases//test.db";
+                String bkDBPath = "test.sqlite";
+
+                File crDB = new File(dataDir, crDBPath);
+                File bkDB = new File(sdDir, bkDBPath);
+
+                if(crDB.exists()){
+                    FileChannel src = new FileInputStream(crDB).getChannel();
+                    FileChannel dst = new FileOutputStream(bkDB).getChannel();
+                    dst.transferFrom(src, 0, src.size());
+                    src.close();
+                    dst.close();
+                }
+
+                /*if(bkDB.exists()){
+                    Toast.makeText(this, "DB file Export Success!", Toast.LENGTH_SHORT).show();
+                }*/
+
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
 }
 
 

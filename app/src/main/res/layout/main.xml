@@ -45,6 +45,14 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Email로 내보내기"
+                        android:id="@+id/btnEmail"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/btnSelectAllDatas" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="DB생성"
                         android:id="@+id/btnCreateDatabase"
                         android:layout_below="@+id/btnStart"
