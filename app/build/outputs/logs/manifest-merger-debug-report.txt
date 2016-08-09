@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:17:1-54:12
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:17:1-52:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:18:5-48
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
@@ -32,7 +32,7 @@ ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\A
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:27:22-77
 application
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:28:5-52:19
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:28:5-50:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
@@ -79,14 +79,6 @@ activity#com.example.android.BluetoothChat.DataActivity
 ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:9-59
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:48:19-47
-activity#com.example.android.BluetoothChat.LoginActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:49:9-60
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:49:19-48
-activity#com.example.android.BluetoothChat.SignupActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:50:9-61
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:50:19-49
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:16:5-42

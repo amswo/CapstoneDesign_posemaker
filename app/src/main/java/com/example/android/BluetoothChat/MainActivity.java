@@ -58,6 +58,19 @@ public class MainActivity extends Activity {
     // Home 버튼
     private Button btnHome;
 
+    // 초기값을 위한 변수들
+
+    public int cnt=0;
+    public int SumAx=0;
+    public int SumAy=0;
+    public int SumAz=0;
+    public int num1=0;
+    public int num2=0;
+    public int num3=0;
+    public int initAx=0;
+    public int initAy=0;
+    public int initAz=0;
+
 
     public int RxCount = 0;
     // Message types sent from the BluetoothChatService Handler
@@ -125,18 +138,21 @@ public class MainActivity extends Activity {
         btnCreateDatabase = (Button) findViewById(R.id.btnCreateDatabase);
         btnCreateDatabase.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                final EditText etDBName = new EditText(MainActivity.this);
-                etDBName.setHint("DB명을 입력하세요");
+//                final EditText etDBName = new EditText(MainActivity.this);
+//                etDBName.setHint("DB명을 입력하세요");
+                final String etDBName = "datatest"; // DB이름
 
                 // Dialog로 database의 이름을 입력 받음
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog.setTitle("Database 이름 입력")
-                        .setMessage("Database 이름 입력")
-                        .setView(etDBName)
+                dialog
+//                        .setTitle("Database 이름 입력")
+//                        .setMessage("Database 이름 입력")
+//                        .setView(etDBName)
+//                        .setView(etDBName)
                         .setPositiveButton("생성", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                if (etDBName.getText().toString().length() > 0) {
-                                    dbHelper = new DBHelper(MainActivity.this,  etDBName.getText().toString(), null, 1); //etDBName.getText().toString() + "/mnt/sdcard/"
+                                if (etDBName.length() > 0) {
+                                    dbHelper = new DBHelper(MainActivity.this,  etDBName, null, 1); //etDBName.getText().toString() + "/mnt/sdcard/"
                                     dbHelper.testDB();
                                 }
                             }
@@ -156,16 +172,16 @@ public class MainActivity extends Activity {
                 LinearLayout layout = new LinearLayout(MainActivity.this);
                 layout.setOrientation(LinearLayout.VERTICAL);
 
-                final EditText etAX = new EditText(MainActivity.this);
-                etAX.setHint("AX 입력");
-                final EditText etAY = new EditText(MainActivity.this);
-                etAY.setHint("AY 입력");
-                final EditText etAZ = new EditText(MainActivity.this);
-                etAZ.setHint("AZ 입력");
-
-                layout.addView(etAX);
-                layout.addView(etAY);
-                layout.addView(etAZ);
+//                final EditText etAX = new EditText(MainActivity.this);
+//                etAX.setHint("AX 입력");
+//                final EditText etAY = new EditText(MainActivity.this);
+//                etAY.setHint("AY 입력");
+//                final EditText etAZ = new EditText(MainActivity.this);
+//                etAZ.setHint("AZ 입력");
+//
+//                layout.addView(etAX);
+//                layout.addView(etAY);
+//                layout.addView(etAZ);
 
 
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
@@ -173,9 +189,14 @@ public class MainActivity extends Activity {
                         .setView(layout)
                         .setPositiveButton("등록", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                String ax = etAX.getText().toString();
-                                String ay = etAY.getText().toString();
-                                String az = etAZ.getText().toString();
+
+//                                String ax = etAX.getText().toString();
+//                                String ay = etAY.getText().toString();
+//                                String az = etAZ.getText().toString();
+
+                                String ax = String.format("%6d", initAx);
+                                String ay = String.format("%6d", initAy);
+                                String az = String.format("%6d", initAz);
 
                                 Toast.makeText(MainActivity.this, ax + " " + ay + " " + az, Toast.LENGTH_LONG);
 
@@ -184,9 +205,12 @@ public class MainActivity extends Activity {
                                 }
 
                                 Pose pose = new Pose();
-                                pose.setAx(etAX.getText().toString());
-                                pose.setAy(etAY.getText().toString());
-                                pose.setAz(etAZ.getText().toString());
+//                                pose.setAx(etAX.getText().toString());
+//                                pose.setAy(etAY.getText().toString());
+//                                pose.setAz(etAZ.getText().toString());
+                                pose.setAy(ax);
+                                pose.setAy(ay);
+                                pose.setAz(az);
 
                                 dbHelper.addPose(pose);
 
@@ -219,22 +243,11 @@ public class MainActivity extends Activity {
             }
         });
 
-
-        // Home Button
-        btnHome = (Button)findViewById(R.id.btnHome);
-        btnHome.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View view){
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
         // 이메일로 data 전송하기
         Button btnEmail = (Button) findViewById(R.id.btnEmail);
 
         // 전송할 파일의 경로
-        String szSendFilePath = "/data/data/com.example.android.BluetoothChat/test.db";
+        String szSendFilePath = "/data/data/com.example.application/databases/test.db";
 //        String szSendFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/test.db"; // 나중에 DB파일 보낼 때 파일명 수정하면 된다. 예) test.db , test.sqlite
         File f = new File(szSendFilePath);
         if (!f.exists()) {
@@ -275,29 +288,29 @@ public class MainActivity extends Activity {
         super.onStart();
 
         // 블루투스 기능 잠시 꺼놓음
-//        // If BT is not on, request that it be enabled.
-//        // setupChat() will then be called during onActivityResult
-//        if (!mBluetoothAdapter.isEnabled())
-//        {
-//          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//
-//
-//          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-//        // Otherwise, setup the chat session
-//        }
-//        else {
-//            if (mChatService == null) setupChat();
-//        }
-//
-//        // mode1 버튼이 눌렸을 때
-//        findViewById(R.id.btnStart).setOnClickListener(
-//                new Button.OnClickListener() {
-//                    public void onClick(View v) {
-//                        Log.d("TX", "start");
-//                        sendMessage1((byte) 'a');
-//                    }
-//                }
-//        );
+        // If BT is not on, request that it be enabled.
+        // setupChat() will then be called during onActivityResult
+        if (!mBluetoothAdapter.isEnabled())
+        {
+          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+
+
+          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+        // Otherwise, setup the chat session
+        }
+        else {
+            if (mChatService == null) setupChat();
+        }
+
+        // mode1 버튼이 눌렸을 때
+        findViewById(R.id.btnStart).setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Log.d("TX", "start");
+                        sendMessage1((byte) 'a');
+                    }
+                }
+        );
     }
 
     @Override
@@ -383,34 +396,39 @@ public class MainActivity extends Activity {
                   String readMessage = new String(readBuf, 0, msg.arg1);
 
                   strRxData += readMessage;
-
-                  String[] separated = strRxData.split("\n");
-                  if (separated.length > 1) {
+                  if (RxCount++ > 100)
+                  {
+                      String[] separated = strRxData.split("\n");
 
                       // 300 중에 한번만 처리
-                      if(RxCount++ >=300) {
+                      for (int i = 0; i < separated.length - 1; i++)
+                      {
 
-                          for (int i = 0; i < separated.length - 1; i++) {
-                              //   Log.d("RX" + i, separated[i]);
+                          String[] sData = separated[i].split(",");
+                          if (sData.length == 6) {
+                              if ((sData[0] != "") && (sData[1] !="") && (sData[2] != "")) {
+                                  // Log.d("RX:", "AX:" + sData[0] + ", AY:" + sData[1] + ", AZ:" + sData[2] + ", GX:" + sData[3] + ", GY:" + sData[4] + ", GZ:" + sData[5]);
 
-                              String[] sData = separated[i].split(",");
-                              if (sData.length >= 6) {
-                                  Log.d("RX:", "AX:" + sData[0] + ", AY:" + sData[1] + ", AZ:" + sData[2] + ", GX:" + sData[3] + ", GY:" + sData[4] + ", GZ:" + sData[5]);
+                                  num1 = Integer.parseInt(sData[0]);
+                                  num2 = Integer.parseInt(sData[1]);
+                                  num3 = Integer.parseInt(sData[2]);
+                                  calculate(num1, num2, num3);
 
-                                  try {
-                                      ((TextView) findViewById(R.id.tv_Data)).setText(
-                                              String.format("%6s", sData[0]) + String.format("%6s", sData[1]) + String.format("%6s", sData[2]) + String.format("%6s", sData[3]) + String.format("%6s", sData[4]) + String.format("%6s", sData[5]));
-                                  } catch (Exception e) {
-                                  }
-
+                                  strRxData = "";
+                                  break;
                               }
                           }
-                          RxCount = 0;
+                          else
+                          {
+                              continue;
+                          }
+
                       }
-                    //  strRxData = separated[separated.length - 1];
+                      RxCount = 0;
                   }
 
                   break;
+
                 
                 //mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
             case MESSAGE_DEVICE_NAME:
@@ -426,6 +444,32 @@ public class MainActivity extends Activity {
             }
         }
     };
+
+
+
+    // 초기값을 위한 계산함수
+    public void calculate (int cnum1, int cnum2, int cnum3){
+        SumAx += cnum1;
+        SumAy += cnum2;
+        SumAz += cnum3;
+
+        cnt++;
+
+        if(cnt==10){
+            initAx = SumAx/cnt;
+            initAy = SumAy/cnt;
+            initAz = SumAz/cnt;
+
+            ((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) +String.format("%6d", initAx) +
+                    String.format("%6d", initAy) + String.format("%6d", initAz));
+        }
+        else{
+            //((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) + String.format("%6d", SumAx) +
+            //String.format("%6d", SumAy) + String.format("%6d", SumAz));
+        }
+
+    }
+
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
