@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.android.BluetoothChat.vo.Pose;
@@ -16,6 +17,7 @@ import java.util.List;
  */
 public class DBHelper extends SQLiteOpenHelper {
     private Context context;
+    private Cursor cursor;
 
     public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
         super(context, name, factory, version);
@@ -26,9 +28,9 @@ public class DBHelper extends SQLiteOpenHelper {
         StringBuffer sb = new StringBuffer();
         sb.append("CREATE TABLE TEST_TABLE(");
         sb.append("_ID INTEGER PRIMARY KEY AUTOINCREMENT,");
-        sb.append("AX TEXT,");
-        sb.append("AY TEXT,");
-        sb.append("AZ TEXT);");
+        sb.append("AX TEXT NOT NULL,");
+        sb.append("AY TEXT NOT NULL,");
+        sb.append("AZ TEXT NOT NULL);");
 
         //SQL 실행
         db.execSQL(sb.toString());
@@ -61,26 +63,28 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL(query);
 
+//        Toast.makeText(context, pose.getAx(), Toast.LENGTH_LONG).show();
         Toast.makeText(context, "Insert 완료", Toast.LENGTH_SHORT).show();
     }
 
 
     // delete record 확실하지않다.
-    public void deletePose(Pose pose){
-        SQLiteDatabase db = getWritableDatabase();
-
-        db.delete("TEST_TABLE", "_id = ?", new String[]{String.valueOf(pose.get_id())});
-        db.close();
-    }
+//    public void deletePose(Pose pose){
+//        SQLiteDatabase db = getWritableDatabase();
+//
+//        db.delete("TEST_TABLE", "_id = ?", new String[]{String.valueOf(pose.get_id())});
+//        db.close();
+//    }
 
     public List<Pose> getAllPoses(){
-        StringBuffer sb = new StringBuffer();
+               StringBuffer sb = new StringBuffer();
         sb.append("SELECT _ID, AX, AY, AZ FROM TEST_TABLE");
 
         SQLiteDatabase db= getReadableDatabase();
 
-        // SELECT 실행
-        Cursor cursor = db.rawQuery(sb.toString(), null);
+//         SELECT 실행
+        cursor = db.rawQuery(sb.toString(), null);
+
 
         List<Pose> poses= new ArrayList<Pose>();
 
@@ -94,6 +98,7 @@ public class DBHelper extends SQLiteOpenHelper {
             pose.setAz(cursor.getString(3));
 
             poses.add(pose);
+
         }
 
         return poses;

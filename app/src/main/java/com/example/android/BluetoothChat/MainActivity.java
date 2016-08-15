@@ -20,20 +20,18 @@ import android.annotation.SuppressLint;
 import android.app.*;
 import android.bluetooth.*;
 import android.content.*;
-import android.net.Uri;
+
 import android.os.*;
 import android.util.*;
 import android.view.*;
 import android.view.View.OnClickListener;
 import android.widget.*;
-import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.example.android.BluetoothChat.db.DBHelper;
 import com.example.android.BluetoothChat.vo.Pose;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -41,11 +39,23 @@ import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-/**
- * This is the main Activity that displays the current chat session.
- */
 public class MainActivity extends Activity {
+
+    private Button btnAlarm;
+
+    // 알람
+    static final String TAG1 = "AlarmActivity";
+
+    String rid;
+    String senderId = "653402390386";
 
     //DB
     private Button btnCreateDatabase;
@@ -54,12 +64,10 @@ public class MainActivity extends Activity {
     private Button btnSelectAllDatas;
     private ListView IvPoses;
 
-
     // Home 버튼
     private Button btnHome;
 
     // 초기값을 위한 변수들
-
     public int cnt=0;
     public int SumAx=0;
     public int SumAy=0;
@@ -198,19 +206,25 @@ public class MainActivity extends Activity {
                                 String ay = String.format("%6d", initAy);
                                 String az = String.format("%6d", initAz);
 
-                                Toast.makeText(MainActivity.this, ax + " " + ay + " " + az, Toast.LENGTH_LONG);
+
+//                                Toast.makeText(MainActivity.this, ax + " " + ay + " " + az, Toast.LENGTH_LONG);
 
                                 if (dbHelper == null) {
                                     dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
                                 }
 
                                 Pose pose = new Pose();
+
+                                // 입력용
 //                                pose.setAx(etAX.getText().toString());
 //                                pose.setAy(etAY.getText().toString());
 //                                pose.setAz(etAZ.getText().toString());
-                                pose.setAy(ax);
-                                pose.setAy(ay);
-                                pose.setAz(az);
+
+
+                                // db
+                                pose.setAx(ax.toString());
+                                pose.setAy(ay.toString());
+                                pose.setAz(az.toString());
 
                                 dbHelper.addPose(pose);
 
@@ -243,74 +257,88 @@ public class MainActivity extends Activity {
             }
         });
 
-        // 이메일로 data 전송하기
-        Button btnEmail = (Button) findViewById(R.id.btnEmail);
-
-        // 전송할 파일의 경로
-        String szSendFilePath = "/data/data/com.example.application/databases/test.db";
-//        String szSendFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/test.db"; // 나중에 DB파일 보낼 때 파일명 수정하면 된다. 예) test.db , test.sqlite
-        File f = new File(szSendFilePath);
-        if (!f.exists()) {
-            Toast.makeText(this, "파일이 없습니다.", Toast.LENGTH_SHORT).show();
-        }
-
-        // File객체로부터 Uri값 생성
-        final Uri fileUri = Uri.fromFile(f);
-
-        /** 첨부파일 이메일 보내기 */
-        btnEmail.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent it = new Intent(Intent.ACTION_SEND);
-                it.setType("plain/text");
-
-                // 수신인 주소 - tos배열의 값을 늘릴 경우 다수의 수신자에게 발송됨
-                // tos 부분을 로그인DB의 emailAddress로
-                String[] tos = {"amswo@naver.com"};
-                it.putExtra(Intent.EXTRA_EMAIL, tos);
-
-                it.putExtra(Intent.EXTRA_SUBJECT, "The email subject text");
-                it.putExtra(Intent.EXTRA_TEXT, "The email body text");
-
-                // 파일첨부
-                it.putExtra(Intent.EXTRA_STREAM, fileUri);
-
-                startActivity(it);
-            }
-        });
-
-
+//        // 이메일로 data 전송하기
+//        Button btnEmail = (Button) findViewById(R.id.btnEmail);
+//
+//        // 전송할 파일의 경로
+//        String szSendFilePath = "/data/data/com.example.application/databases/test.db";
+////        String szSendFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/test.db"; // 나중에 DB파일 보낼 때 파일명 수정하면 된다. 예) test.db , test.sqlite
+//        File f = new File(szSendFilePath);
+//        if (!f.exists()) {
+//            Toast.makeText(this, "파일이 없습니다.", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        // File객체로부터 Uri값 생성
+//        final Uri fileUri = Uri.fromFile(f);
+//
+//        /** 첨부파일 이메일 보내기 */
+//        btnEmail.setOnClickListener(new OnClickListener() {
+//            public void onClick(View v) {
+//                Intent it = new Intent(Intent.ACTION_SEND);
+//                it.setType("plain/text");
+//
+//                // 수신인 주소 - tos배열의 값을 늘릴 경우 다수의 수신자에게 발송됨
+//                // tos 부분을 로그인DB의 emailAddress로
+//                String[] tos = {"amswo@naver.com"};
+//                it.putExtra(Intent.EXTRA_EMAIL, tos);
+//
+//                it.putExtra(Intent.EXTRA_SUBJECT, "The email subject text");
+//                it.putExtra(Intent.EXTRA_TEXT, "The email body text");
+//
+//                // 파일첨부
+//                it.putExtra(Intent.EXTRA_STREAM, fileUri);
+//
+//                startActivity(it);
+//            }
+//        });
+//
+//        btnAlarm = (Button)findViewById(R.id.btnAlarm);
+//        btnAlarm.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View view){
+//                Intent intent = new Intent(getApplicationContext(), AlarmActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        //알람
+//        btnActionListener btnListener = new btnActionListener();
+//        btnregist = (Button)findViewById(R.id.btn_regist);
+//        btnregist.setOnClickListener(btnListener);
+//        btnunregist = (Button)findViewById(R.id.btn_unregist);
+//        btnunregist.setOnClickListener(btnListener);
+//        tvmsgview = (TextView)findViewById(R.id.tv_msgview);
+//
+//        tvmsgview.setText(tv_msg);
     }
 
-
-
-	@Override
+    @Override
     public void onStart() {
         super.onStart();
 
         // 블루투스 기능 잠시 꺼놓음
-        // If BT is not on, request that it be enabled.
-        // setupChat() will then be called during onActivityResult
-        if (!mBluetoothAdapter.isEnabled())
-        {
-          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-
-
-          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-        // Otherwise, setup the chat session
-        }
-        else {
-            if (mChatService == null) setupChat();
-        }
-
-        // mode1 버튼이 눌렸을 때
-        findViewById(R.id.btnStart).setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-                        Log.d("TX", "start");
-                        sendMessage1((byte) 'a');
-                    }
-                }
-        );
+//         If BT is not on, request that it be enabled.
+//         setupChat() will then be called during onActivityResult
+//        if (!mBluetoothAdapter.isEnabled())
+//        {
+//          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//
+//
+//          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+//        // Otherwise, setup the chat session
+//        }
+//        else {
+//            if (mChatService == null) setupChat();
+//        }
+//
+//        // mode1 버튼이 눌렸을 때
+//        findViewById(R.id.btnStart).setOnClickListener(
+//                new Button.OnClickListener() {
+//                    public void onClick(View v) {
+//                        Log.d("TX", "start");
+//                        sendMessage1((byte) 'a');
+//                    }
+//                }
+//        );
     }
 
     @Override
@@ -334,7 +362,7 @@ public class MainActivity extends Activity {
         // Initialize the array adapter for the conversation thread
         mConversationArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
 
-        // Initialize the BluetoothChatService to perform bluetooth connections 
+        // Initialize the BluetoothChatService to perform bluetooth connections
         mChatService = new CRobot_BluetoothService(this, mHandler);
 
         // Initialize the buffer for outgoing messages
@@ -376,12 +404,12 @@ public class MainActivity extends Activity {
           switch (msg.what) {
             case MESSAGE_STATE_CHANGE: // 占쏙옙占쏙옙占쏙옙占�占쏙옙占쏙옙
                 switch (msg.arg1) {
-                case CRobot_BluetoothService.STATE_CONNECTED: 
+                case CRobot_BluetoothService.STATE_CONNECTED:
                     mTitle.setText(R.string.title_connected_to);
-                    mTitle.append(mConnectedDeviceName); 
+                    mTitle.append(mConnectedDeviceName);
                     mConversationArrayAdapter.clear();
                     break;
-                case CRobot_BluetoothService.STATE_CONNECTING: 
+                case CRobot_BluetoothService.STATE_CONNECTING:
                     mTitle.setText(R.string.title_connecting);
                     break;
                 case CRobot_BluetoothService.STATE_LISTEN:
@@ -429,7 +457,7 @@ public class MainActivity extends Activity {
 
                   break;
 
-                
+
                 //mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
             case MESSAGE_DEVICE_NAME:
                 // save the connected device's name
@@ -447,7 +475,7 @@ public class MainActivity extends Activity {
 
 
 
-    // 초기값을 위한 계산함수
+//     초기값을 위한 계산함수
     public void calculate (int cnum1, int cnum2, int cnum3){
         SumAx += cnum1;
         SumAy += cnum2;
@@ -506,7 +534,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) { 
+    public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
         case R.id.scan:
             // Launch the DeviceListActivity to see devices and do scan
@@ -519,6 +547,7 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+
     }
 
     @Override
@@ -526,9 +555,6 @@ public class MainActivity extends Activity {
     {
     	super.onPause();
     }
-
-
-
 
 
 
