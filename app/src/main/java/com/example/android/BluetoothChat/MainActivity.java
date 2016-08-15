@@ -1,20 +1,4 @@
-/*
- * Copyright (C) 2009 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package com.example.android.BluetoothChat;
+ package com.example.android.BluetoothChat;
 
 import android.annotation.SuppressLint;
 import android.app.*;
@@ -36,6 +20,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -56,6 +41,14 @@ public class MainActivity extends Activity {
 
     String rid;
     String senderId = "653402390386";
+
+    // 알람
+    private Button btn1;
+    private Button btn2;
+    private TextView time_info;
+
+    private Chronometer chronometer;
+    private LinearLayout ll;
 
     //DB
     private Button btnCreateDatabase;
@@ -141,7 +134,6 @@ public class MainActivity extends Activity {
             return;
         }
 
-
         // DB 생성
         btnCreateDatabase = (Button) findViewById(R.id.btnCreateDatabase);
         btnCreateDatabase.setOnClickListener(new View.OnClickListener() {
@@ -180,46 +172,21 @@ public class MainActivity extends Activity {
                 LinearLayout layout = new LinearLayout(MainActivity.this);
                 layout.setOrientation(LinearLayout.VERTICAL);
 
-//                final EditText etAX = new EditText(MainActivity.this);
-//                etAX.setHint("AX 입력");
-//                final EditText etAY = new EditText(MainActivity.this);
-//                etAY.setHint("AY 입력");
-//                final EditText etAZ = new EditText(MainActivity.this);
-//                etAZ.setHint("AZ 입력");
-//
-//                layout.addView(etAX);
-//                layout.addView(etAY);
-//                layout.addView(etAZ);
-
-
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
                 dialog.setTitle("정보 입력")
                         .setView(layout)
                         .setPositiveButton("등록", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
-//                                String ax = etAX.getText().toString();
-//                                String ay = etAY.getText().toString();
-//                                String az = etAZ.getText().toString();
-
                                 String ax = String.format("%6d", initAx);
                                 String ay = String.format("%6d", initAy);
                                 String az = String.format("%6d", initAz);
-
-
-//                                Toast.makeText(MainActivity.this, ax + " " + ay + " " + az, Toast.LENGTH_LONG);
 
                                 if (dbHelper == null) {
                                     dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
                                 }
 
                                 Pose pose = new Pose();
-
-                                // 입력용
-//                                pose.setAx(etAX.getText().toString());
-//                                pose.setAy(etAY.getText().toString());
-//                                pose.setAz(etAZ.getText().toString());
-
 
                                 // db
                                 pose.setAx(ax.toString());
@@ -292,23 +259,55 @@ public class MainActivity extends Activity {
 //            }
 //        });
 //
-//        btnAlarm = (Button)findViewById(R.id.btnAlarm);
-//        btnAlarm.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View view){
-//                Intent intent = new Intent(getApplicationContext(), AlarmActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        //알람
-//        btnActionListener btnListener = new btnActionListener();
-//        btnregist = (Button)findViewById(R.id.btn_regist);
-//        btnregist.setOnClickListener(btnListener);
-//        btnunregist = (Button)findViewById(R.id.btn_unregist);
-//        btnunregist.setOnClickListener(btnListener);
-//        tvmsgview = (TextView)findViewById(R.id.tv_msgview);
-//
-//        tvmsgview.setText(tv_msg);
+
+
+        // alaram
+        time_info = (TextView) findViewById(R.id.chronometer);
+        btn1 = (Button) findViewById(R.id.buttonstart);
+        btn2 = (Button) findViewById(R.id.buttonreset);
+
+        chronometer = (Chronometer) findViewById(R.id.chronometer);
+
+        // 1초 마다 실행되는 메소드
+        // 실행되는데 약간의 텀이 필요하기 때문에 정확하게 1초마다 실행하는데에 대한 부분은 장담못함.
+        // 그래도 거의 정확하게 실행.
+        chronometer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+            public void onChronometerTick(Chronometer chronometer) {
+                long elapseMills = SystemClock.elapsedRealtime() - chronometer.getBase();
+                DecimalFormat numFormat = new DecimalFormat("###,###");
+                String num =  numFormat.format(30000);
+                String output = numFormat.format(elapseMills);
+                time_info.setText("Total sec : " + output);
+
+                if(output.startsWith("10"))
+                {
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+                    dialog.setTitle("올바르지 않은 자세를 30초간 유지했습니다.");
+                    dialog.setMessage("다시한번 바르게 앉아주세요");
+                    // OK 버튼 이벤트
+                    dialog.setPositiveButton("예", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+                    dialog.show();
+
+                }
+
+            }
+        });
+
+        btn1.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                chronometer.setBase(SystemClock.elapsedRealtime());
+                chronometer.start();
+            }
+        });
+
+        btn2.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                chronometer.stop();
+            }
+        });
     }
 
     @Override
@@ -318,27 +317,27 @@ public class MainActivity extends Activity {
         // 블루투스 기능 잠시 꺼놓음
 //         If BT is not on, request that it be enabled.
 //         setupChat() will then be called during onActivityResult
-//        if (!mBluetoothAdapter.isEnabled())
-//        {
-//          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//
-//
-//          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-//        // Otherwise, setup the chat session
-//        }
-//        else {
-//            if (mChatService == null) setupChat();
-//        }
-//
-//        // mode1 버튼이 눌렸을 때
-//        findViewById(R.id.btnStart).setOnClickListener(
-//                new Button.OnClickListener() {
-//                    public void onClick(View v) {
-//                        Log.d("TX", "start");
-//                        sendMessage1((byte) 'a');
-//                    }
-//                }
-//        );
+        if (!mBluetoothAdapter.isEnabled())
+        {
+          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+
+
+          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+        // Otherwise, setup the chat session
+        }
+        else {
+            if (mChatService == null) setupChat();
+        }
+
+        // mode1 버튼이 눌렸을 때
+        findViewById(R.id.btnStart).setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Log.d("TX", "start");
+                        sendMessage1((byte) 'a');
+                    }
+                }
+        );
     }
 
     @Override
