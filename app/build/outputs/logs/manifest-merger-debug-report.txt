@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-47:12
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-45:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:4:5-48
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\A
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:9:22-65
 application
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:14:5-45:19
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:14:5-43:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml:17:5-19
 	android:label

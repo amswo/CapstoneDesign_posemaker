@@ -40,8 +40,6 @@
             android:configChanges="orientation|keyboardHidden"
             android:theme="@android:style/Theme.NoTitleBar" />
 
-
-
     </application>
 
 </manifest>

@@ -35,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
         //SQL 실행
         db.execSQL(sb.toString());
 
-        Toast.makeText(context, "DB 생성 완료", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(context, "DB 생성 완료", Toast.LENGTH_SHORT).show();
 }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
@@ -45,7 +45,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public void testDB(){
         SQLiteDatabase db = getReadableDatabase();
     }
-
 
 
     public void addPose(Pose pose){

@@ -1,113 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:background="#ffffffff">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/h3"
+        android:text="초기자세설정"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnInitialPose"
+        android:layout_gravity="center_horizontal"
+        />
 
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1.12"
-                    android:layout_gravity="center">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/h1"
+        android:text="자세유형분석"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnPoseType" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="초기자세"
-                        android:id="@+id/btnStart"
-                        android:layout_marginTop="37dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="값비교"
-                        android:id="@+id/btnCompare"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="HOME"
-                        android:id="@+id/btnHome"
-                        android:layout_alignTop="@+id/btnSelectAllDatas"
-                        android:layout_alignParentLeft="true" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email로 내보내기"
-                        android:id="@+id/btnEmail"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignRight="@+id/btnSelectAllDatas" />
-
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="DATA 가져오기"
-                        android:id="@+id/btnSelectAllDatas"
-                        android:layout_below="@+id/btnEmail"
-                        android:layout_alignParentRight="true" />
-
-                    <Button
-                        android:id="@+id/buttonreset"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AlarmReset"
-                        android:layout_alignParentLeft="true" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="3.11">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="data"
-                        android:id="@+id/tv_Data"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentRight="true"
-                        android:textColor="@android:color/black" />
-
-
-                    <ListView
-                        android:id="@+id/IvPoses"
-                        android:textColor="@android:color/black"
-                        android:visibility="invisible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="100dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentLeft="true">
-                    </ListView>
-
-                    <Chronometer
-                        android:id="@+id/chronometer"
-                        android:layout_width="fill_parent"
-                        android:gravity="center"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center_horizontal"
-                        android:textColor="#000000"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentLeft="true" />
-
-                </RelativeLayout>
-
-
-
-
-    </LinearLayout>
-
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/h4"
+        android:text="환경설정"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnSetting"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
