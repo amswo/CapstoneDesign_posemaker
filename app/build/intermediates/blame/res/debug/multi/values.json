@@ -2496,9 +2496,51 @@
                     "startLine": 149,
                     "startColumn": 4,
                     "startOffset": 13827,
-                    "endLine": 151,
+                    "endLine": 152,
                     "endColumn": 12,
-                    "endOffset": 14022
+                    "endOffset": 14044
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\values\\style.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 95,
+                        "endLine": 6,
+                        "endColumn": 12,
+                        "endOffset": 315
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 14049,
+                    "endLine": 155,
+                    "endColumn": 12,
+                    "endOffset": 14161
+                },
+                "from": {
+                    "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\values\\style.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 437
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 14166,
+                    "endLine": 158,
+                    "endColumn": 12,
+                    "endOffset": 14361
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2514,12 +2556,12 @@
             },
             {
                 "to": {
-                    "startLine": 152,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 14027,
-                    "endLine": 156,
+                    "startOffset": 14366,
+                    "endLine": 163,
                     "endColumn": 12,
-                    "endOffset": 14305
+                    "endOffset": 14644
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2535,12 +2577,12 @@
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 14310,
-                    "endLine": 160,
+                    "startOffset": 14649,
+                    "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 14513
+                    "endOffset": 14852
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2556,12 +2598,12 @@
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 14518,
-                    "endLine": 163,
+                    "startOffset": 14857,
+                    "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 14644
+                    "endOffset": 14983
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2577,12 +2619,12 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 14649,
-                    "endLine": 167,
+                    "startOffset": 14988,
+                    "endLine": 174,
                     "endColumn": 12,
-                    "endOffset": 14906
+                    "endOffset": 15245
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2598,12 +2640,12 @@
             },
             {
                 "to": {
-                    "startLine": 168,
+                    "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 14911,
-                    "endLine": 171,
+                    "startOffset": 15250,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 15168
+                    "endOffset": 15507
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2619,12 +2661,12 @@
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 15173,
-                    "endLine": 175,
+                    "startOffset": 15512,
+                    "endLine": 182,
                     "endColumn": 12,
-                    "endOffset": 15446
+                    "endOffset": 15785
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2640,12 +2682,12 @@
             },
             {
                 "to": {
-                    "startLine": 176,
+                    "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 15451,
-                    "endLine": 179,
+                    "startOffset": 15790,
+                    "endLine": 186,
                     "endColumn": 12,
-                    "endOffset": 15660
+                    "endOffset": 15999
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2661,12 +2703,12 @@
             },
             {
                 "to": {
-                    "startLine": 180,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 15665,
-                    "endLine": 182,
+                    "startOffset": 16004,
+                    "endLine": 189,
                     "endColumn": 12,
-                    "endOffset": 15797
+                    "endOffset": 16136
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2682,11 +2724,11 @@
             },
             {
                 "to": {
-                    "startLine": 183,
+                    "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 15802,
+                    "startOffset": 16141,
                     "endColumn": 140,
-                    "endOffset": 15938
+                    "endOffset": 16277
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2701,11 +2743,11 @@
             },
             {
                 "to": {
-                    "startLine": 184,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 15943,
+                    "startOffset": 16282,
                     "endColumn": 140,
-                    "endOffset": 16079
+                    "endOffset": 16418
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2720,11 +2762,11 @@
             },
             {
                 "to": {
-                    "startLine": 185,
+                    "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 16084,
+                    "startOffset": 16423,
                     "endColumn": 139,
-                    "endOffset": 16219
+                    "endOffset": 16558
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2739,11 +2781,11 @@
             },
             {
                 "to": {
-                    "startLine": 186,
+                    "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 16224,
+                    "startOffset": 16563,
                     "endColumn": 133,
-                    "endOffset": 16353
+                    "endOffset": 16692
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2758,11 +2800,11 @@
             },
             {
                 "to": {
-                    "startLine": 187,
+                    "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 16358,
+                    "startOffset": 16697,
                     "endColumn": 141,
-                    "endOffset": 16495
+                    "endOffset": 16834
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2777,11 +2819,11 @@
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 16500,
+                    "startOffset": 16839,
                     "endColumn": 141,
-                    "endOffset": 16637
+                    "endOffset": 16976
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2796,11 +2838,11 @@
             },
             {
                 "to": {
-                    "startLine": 189,
+                    "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 16642,
+                    "startOffset": 16981,
                     "endColumn": 127,
-                    "endOffset": 16765
+                    "endOffset": 17104
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2815,11 +2857,11 @@
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 16770,
+                    "startOffset": 17109,
                     "endColumn": 121,
-                    "endOffset": 16887
+                    "endOffset": 17226
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2834,11 +2876,11 @@
             },
             {
                 "to": {
-                    "startLine": 191,
+                    "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 16892,
+                    "startOffset": 17231,
                     "endColumn": 127,
-                    "endOffset": 17015
+                    "endOffset": 17354
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2853,11 +2895,11 @@
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 17020,
+                    "startOffset": 17359,
                     "endColumn": 135,
-                    "endOffset": 17151
+                    "endOffset": 17490
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2872,11 +2914,11 @@
             },
             {
                 "to": {
-                    "startLine": 193,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 17156,
+                    "startOffset": 17495,
                     "endColumn": 151,
-                    "endOffset": 17303
+                    "endOffset": 17642
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2891,11 +2933,11 @@
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 17308,
+                    "startOffset": 17647,
                     "endColumn": 129,
-                    "endOffset": 17433
+                    "endOffset": 17772
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2910,11 +2952,11 @@
             },
             {
                 "to": {
-                    "startLine": 195,
+                    "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 17438,
+                    "startOffset": 17777,
                     "endColumn": 145,
-                    "endOffset": 17579
+                    "endOffset": 17918
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2929,11 +2971,11 @@
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 17584,
+                    "startOffset": 17923,
                     "endColumn": 137,
-                    "endOffset": 17717
+                    "endOffset": 18056
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2948,11 +2990,11 @@
             },
             {
                 "to": {
-                    "startLine": 197,
+                    "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 17722,
+                    "startOffset": 18061,
                     "endColumn": 153,
-                    "endOffset": 17871
+                    "endOffset": 18210
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2967,11 +3009,11 @@
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 17876,
+                    "startOffset": 18215,
                     "endColumn": 131,
-                    "endOffset": 18003
+                    "endOffset": 18342
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -2986,11 +3028,11 @@
             },
             {
                 "to": {
-                    "startLine": 199,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 18008,
+                    "startOffset": 18347,
                     "endColumn": 147,
-                    "endOffset": 18151
+                    "endOffset": 18490
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3005,12 +3047,12 @@
             },
             {
                 "to": {
-                    "startLine": 200,
+                    "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 18156,
-                    "endLine": 204,
+                    "startOffset": 18495,
+                    "endLine": 211,
                     "endColumn": 12,
-                    "endOffset": 18446
+                    "endOffset": 18785
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3026,12 +3068,12 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 18451,
-                    "endLine": 207,
+                    "startOffset": 18790,
+                    "endLine": 214,
                     "endColumn": 12,
-                    "endOffset": 18658
+                    "endOffset": 18997
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3047,12 +3089,12 @@
             },
             {
                 "to": {
-                    "startLine": 208,
+                    "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 18663,
-                    "endLine": 210,
+                    "startOffset": 19002,
+                    "endLine": 217,
                     "endColumn": 12,
-                    "endOffset": 18886
+                    "endOffset": 19225
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3068,12 +3110,12 @@
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 18891,
-                    "endLine": 213,
+                    "startOffset": 19230,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 19093
+                    "endOffset": 19432
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3089,12 +3131,12 @@
             },
             {
                 "to": {
-                    "startLine": 214,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 19098,
-                    "endLine": 216,
+                    "startOffset": 19437,
+                    "endLine": 223,
                     "endColumn": 12,
-                    "endOffset": 19316
+                    "endOffset": 19655
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3110,12 +3152,12 @@
             },
             {
                 "to": {
-                    "startLine": 217,
+                    "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 19321,
-                    "endLine": 219,
+                    "startOffset": 19660,
+                    "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 19522
+                    "endOffset": 19861
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3131,12 +3173,12 @@
             },
             {
                 "to": {
-                    "startLine": 220,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 19527,
-                    "endLine": 222,
+                    "startOffset": 19866,
+                    "endLine": 229,
                     "endColumn": 12,
-                    "endOffset": 19751
+                    "endOffset": 20090
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3152,11 +3194,11 @@
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 19756,
+                    "startOffset": 20095,
                     "endColumn": 112,
-                    "endOffset": 19864
+                    "endOffset": 20203
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3171,11 +3213,11 @@
             },
             {
                 "to": {
-                    "startLine": 224,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 19869,
+                    "startOffset": 20208,
                     "endColumn": 128,
-                    "endOffset": 19993
+                    "endOffset": 20332
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3190,12 +3232,12 @@
             },
             {
                 "to": {
-                    "startLine": 225,
+                    "startLine": 232,
                     "startColumn": 4,
-                    "startOffset": 19998,
-                    "endLine": 227,
+                    "startOffset": 20337,
+                    "endLine": 234,
                     "endColumn": 12,
-                    "endOffset": 20201
+                    "endOffset": 20540
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3211,11 +3253,11 @@
             },
             {
                 "to": {
-                    "startLine": 228,
+                    "startLine": 235,
                     "startColumn": 4,
-                    "startOffset": 20206,
+                    "startOffset": 20545,
                     "endColumn": 123,
-                    "endOffset": 20325
+                    "endOffset": 20664
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3230,11 +3272,11 @@
             },
             {
                 "to": {
-                    "startLine": 229,
+                    "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 20330,
+                    "startOffset": 20669,
                     "endColumn": 129,
-                    "endOffset": 20455
+                    "endOffset": 20794
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3249,11 +3291,11 @@
             },
             {
                 "to": {
-                    "startLine": 230,
+                    "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 20460,
+                    "startOffset": 20799,
                     "endColumn": 129,
-                    "endOffset": 20585
+                    "endOffset": 20924
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3268,12 +3310,12 @@
             },
             {
                 "to": {
-                    "startLine": 231,
+                    "startLine": 238,
                     "startColumn": 4,
-                    "startOffset": 20590,
-                    "endLine": 233,
+                    "startOffset": 20929,
+                    "endLine": 240,
                     "endColumn": 12,
-                    "endOffset": 20799
+                    "endOffset": 21138
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3289,11 +3331,11 @@
             },
             {
                 "to": {
-                    "startLine": 234,
+                    "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 20804,
+                    "startOffset": 21143,
                     "endColumn": 133,
-                    "endOffset": 20933
+                    "endOffset": 21272
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3308,12 +3350,12 @@
             },
             {
                 "to": {
-                    "startLine": 235,
+                    "startLine": 242,
                     "startColumn": 4,
-                    "startOffset": 20938,
-                    "endLine": 268,
+                    "startOffset": 21277,
+                    "endLine": 275,
                     "endColumn": 12,
-                    "endOffset": 23422
+                    "endOffset": 23761
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3329,12 +3371,12 @@
             },
             {
                 "to": {
-                    "startLine": 269,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 23427,
-                    "endLine": 272,
+                    "startOffset": 23766,
+                    "endLine": 279,
                     "endColumn": 12,
-                    "endOffset": 23709
+                    "endOffset": 24048
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3350,12 +3392,12 @@
             },
             {
                 "to": {
-                    "startLine": 273,
+                    "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 23714,
-                    "endLine": 276,
+                    "startOffset": 24053,
+                    "endLine": 283,
                     "endColumn": 12,
-                    "endOffset": 24000
+                    "endOffset": 24339
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3371,11 +3413,11 @@
             },
             {
                 "to": {
-                    "startLine": 277,
+                    "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 24005,
+                    "startOffset": 24344,
                     "endColumn": 89,
-                    "endOffset": 24090
+                    "endOffset": 24429
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3390,11 +3432,11 @@
             },
             {
                 "to": {
-                    "startLine": 278,
+                    "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 24095,
+                    "startOffset": 24434,
                     "endColumn": 103,
-                    "endOffset": 24194
+                    "endOffset": 24533
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3409,11 +3451,11 @@
             },
             {
                 "to": {
-                    "startLine": 279,
+                    "startLine": 286,
                     "startColumn": 4,
-                    "startOffset": 24199,
+                    "startOffset": 24538,
                     "endColumn": 97,
-                    "endOffset": 24292
+                    "endOffset": 24631
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3428,12 +3470,12 @@
             },
             {
                 "to": {
-                    "startLine": 280,
+                    "startLine": 287,
                     "startColumn": 4,
-                    "startOffset": 24297,
-                    "endLine": 313,
+                    "startOffset": 24636,
+                    "endLine": 320,
                     "endColumn": 12,
-                    "endOffset": 26920
+                    "endOffset": 27259
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3449,12 +3491,12 @@
             },
             {
                 "to": {
-                    "startLine": 314,
+                    "startLine": 321,
                     "startColumn": 4,
-                    "startOffset": 26925,
-                    "endLine": 347,
+                    "startOffset": 27264,
+                    "endLine": 354,
                     "endColumn": 12,
-                    "endOffset": 29472
+                    "endOffset": 29811
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3470,11 +3512,11 @@
             },
             {
                 "to": {
-                    "startLine": 348,
+                    "startLine": 355,
                     "startColumn": 4,
-                    "startOffset": 29477,
+                    "startOffset": 29816,
                     "endColumn": 109,
-                    "endOffset": 29582
+                    "endOffset": 29921
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3489,11 +3531,11 @@
             },
             {
                 "to": {
-                    "startLine": 349,
+                    "startLine": 356,
                     "startColumn": 4,
-                    "startOffset": 29587,
+                    "startOffset": 29926,
                     "endColumn": 53,
-                    "endOffset": 29636
+                    "endOffset": 29975
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3508,12 +3550,12 @@
             },
             {
                 "to": {
-                    "startLine": 350,
+                    "startLine": 357,
                     "startColumn": 4,
-                    "startOffset": 29641,
-                    "endLine": 396,
+                    "startOffset": 29980,
+                    "endLine": 403,
                     "endColumn": 12,
-                    "endOffset": 33010
+                    "endOffset": 33349
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3529,12 +3571,12 @@
             },
             {
                 "to": {
-                    "startLine": 397,
+                    "startLine": 404,
                     "startColumn": 4,
-                    "startOffset": 33015,
-                    "endLine": 430,
+                    "startOffset": 33354,
+                    "endLine": 437,
                     "endColumn": 12,
-                    "endOffset": 35425
+                    "endOffset": 35764
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3550,11 +3592,11 @@
             },
             {
                 "to": {
-                    "startLine": 431,
+                    "startLine": 438,
                     "startColumn": 4,
-                    "startOffset": 35430,
+                    "startOffset": 35769,
                     "endColumn": 110,
-                    "endOffset": 35536
+                    "endOffset": 35875
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3569,11 +3611,11 @@
             },
             {
                 "to": {
-                    "startLine": 432,
+                    "startLine": 439,
                     "startColumn": 4,
-                    "startOffset": 35541,
+                    "startOffset": 35880,
                     "endColumn": 86,
-                    "endOffset": 35623
+                    "endOffset": 35962
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3588,12 +3630,12 @@
             },
             {
                 "to": {
-                    "startLine": 433,
+                    "startLine": 440,
                     "startColumn": 4,
-                    "startOffset": 35628,
-                    "endLine": 481,
+                    "startOffset": 35967,
+                    "endLine": 488,
                     "endColumn": 12,
-                    "endOffset": 39126
+                    "endOffset": 39465
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3609,12 +3651,12 @@
             },
             {
                 "to": {
-                    "startLine": 482,
+                    "startLine": 489,
                     "startColumn": 4,
-                    "startOffset": 39131,
-                    "endLine": 507,
+                    "startOffset": 39470,
+                    "endLine": 514,
                     "endColumn": 12,
-                    "endOffset": 41044
+                    "endOffset": 41383
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3630,11 +3672,11 @@
             },
             {
                 "to": {
-                    "startLine": 508,
+                    "startLine": 515,
                     "startColumn": 4,
-                    "startOffset": 41049,
+                    "startOffset": 41388,
                     "endColumn": 98,
-                    "endOffset": 41143
+                    "endOffset": 41482
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3649,11 +3691,11 @@
             },
             {
                 "to": {
-                    "startLine": 509,
+                    "startLine": 516,
                     "startColumn": 4,
-                    "startOffset": 41148,
+                    "startOffset": 41487,
                     "endColumn": 65,
-                    "endOffset": 41209
+                    "endOffset": 41548
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3668,11 +3710,11 @@
             },
             {
                 "to": {
-                    "startLine": 510,
+                    "startLine": 517,
                     "startColumn": 4,
-                    "startOffset": 41214,
+                    "startOffset": 41553,
                     "endColumn": 87,
-                    "endOffset": 41297
+                    "endOffset": 41636
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3687,11 +3729,11 @@
             },
             {
                 "to": {
-                    "startLine": 511,
+                    "startLine": 518,
                     "startColumn": 4,
-                    "startOffset": 41302,
+                    "startOffset": 41641,
                     "endColumn": 99,
-                    "endOffset": 41397
+                    "endOffset": 41736
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3706,11 +3748,11 @@
             },
             {
                 "to": {
-                    "startLine": 512,
+                    "startLine": 519,
                     "startColumn": 4,
-                    "startOffset": 41402,
+                    "startOffset": 41741,
                     "endColumn": 101,
-                    "endOffset": 41499
+                    "endOffset": 41838
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3725,11 +3767,11 @@
             },
             {
                 "to": {
-                    "startLine": 513,
+                    "startLine": 520,
                     "startColumn": 4,
-                    "startOffset": 41504,
+                    "startOffset": 41843,
                     "endColumn": 103,
-                    "endOffset": 41603
+                    "endOffset": 41942
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3744,11 +3786,11 @@
             },
             {
                 "to": {
-                    "startLine": 514,
+                    "startLine": 521,
                     "startColumn": 4,
-                    "startOffset": 41608,
+                    "startOffset": 41947,
                     "endColumn": 103,
-                    "endOffset": 41707
+                    "endOffset": 42046
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3763,11 +3805,11 @@
             },
             {
                 "to": {
-                    "startLine": 515,
+                    "startLine": 522,
                     "startColumn": 4,
-                    "startOffset": 41712,
+                    "startOffset": 42051,
                     "endColumn": 93,
-                    "endOffset": 41801
+                    "endOffset": 42140
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3782,11 +3824,11 @@
             },
             {
                 "to": {
-                    "startLine": 516,
+                    "startLine": 523,
                     "startColumn": 4,
-                    "startOffset": 41806,
+                    "startOffset": 42145,
                     "endColumn": 113,
-                    "endOffset": 41915
+                    "endOffset": 42254
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3801,11 +3843,11 @@
             },
             {
                 "to": {
-                    "startLine": 517,
+                    "startLine": 524,
                     "startColumn": 4,
-                    "startOffset": 41920,
+                    "startOffset": 42259,
                     "endColumn": 111,
-                    "endOffset": 42027
+                    "endOffset": 42366
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3820,11 +3862,11 @@
             },
             {
                 "to": {
-                    "startLine": 518,
+                    "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 42032,
+                    "startOffset": 42371,
                     "endColumn": 89,
-                    "endOffset": 42117
+                    "endOffset": 42456
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3839,11 +3881,11 @@
             },
             {
                 "to": {
-                    "startLine": 519,
+                    "startLine": 526,
                     "startColumn": 4,
-                    "startOffset": 42122,
+                    "startOffset": 42461,
                     "endColumn": 107,
-                    "endOffset": 42225
+                    "endOffset": 42564
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3858,11 +3900,11 @@
             },
             {
                 "to": {
-                    "startLine": 520,
+                    "startLine": 527,
                     "startColumn": 4,
-                    "startOffset": 42230,
+                    "startOffset": 42569,
                     "endColumn": 109,
-                    "endOffset": 42335
+                    "endOffset": 42674
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3877,12 +3919,12 @@
             },
             {
                 "to": {
-                    "startLine": 521,
+                    "startLine": 528,
                     "startColumn": 4,
-                    "startOffset": 42340,
-                    "endLine": 535,
+                    "startOffset": 42679,
+                    "endLine": 542,
                     "endColumn": 12,
-                    "endOffset": 43488
+                    "endOffset": 43827
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3898,12 +3940,12 @@
             },
             {
                 "to": {
-                    "startLine": 536,
+                    "startLine": 543,
                     "startColumn": 4,
-                    "startOffset": 43493,
-                    "endLine": 540,
+                    "startOffset": 43832,
+                    "endLine": 547,
                     "endColumn": 12,
-                    "endOffset": 43842
+                    "endOffset": 44181
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3919,12 +3961,12 @@
             },
             {
                 "to": {
-                    "startLine": 541,
+                    "startLine": 548,
                     "startColumn": 4,
-                    "startOffset": 43847,
-                    "endLine": 545,
+                    "startOffset": 44186,
+                    "endLine": 552,
                     "endColumn": 12,
-                    "endOffset": 44079
+                    "endOffset": 44418
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3940,12 +3982,12 @@
             },
             {
                 "to": {
-                    "startLine": 546,
+                    "startLine": 553,
                     "startColumn": 4,
-                    "startOffset": 44084,
-                    "endLine": 554,
+                    "startOffset": 44423,
+                    "endLine": 561,
                     "endColumn": 12,
-                    "endOffset": 44553
+                    "endOffset": 44892
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3961,12 +4003,12 @@
             },
             {
                 "to": {
-                    "startLine": 555,
+                    "startLine": 562,
                     "startColumn": 4,
-                    "startOffset": 44558,
-                    "endLine": 561,
+                    "startOffset": 44897,
+                    "endLine": 568,
                     "endColumn": 12,
-                    "endOffset": 44940
+                    "endOffset": 45279
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -3982,12 +4024,12 @@
             },
             {
                 "to": {
-                    "startLine": 562,
+                    "startLine": 569,
                     "startColumn": 4,
-                    "startOffset": 44945,
-                    "endLine": 571,
+                    "startOffset": 45284,
+                    "endLine": 578,
                     "endColumn": 12,
-                    "endOffset": 45526
+                    "endOffset": 45865
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4003,11 +4045,11 @@
             },
             {
                 "to": {
-                    "startLine": 572,
+                    "startLine": 579,
                     "startColumn": 4,
-                    "startOffset": 45531,
+                    "startOffset": 45870,
                     "endColumn": 108,
-                    "endOffset": 45635
+                    "endOffset": 45974
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4022,12 +4064,12 @@
             },
             {
                 "to": {
-                    "startLine": 573,
+                    "startLine": 580,
                     "startColumn": 4,
-                    "startOffset": 45640,
-                    "endLine": 575,
+                    "startOffset": 45979,
+                    "endLine": 582,
                     "endColumn": 12,
-                    "endOffset": 45847
+                    "endOffset": 46186
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4043,12 +4085,12 @@
             },
             {
                 "to": {
-                    "startLine": 576,
+                    "startLine": 583,
                     "startColumn": 4,
-                    "startOffset": 45852,
-                    "endLine": 582,
+                    "startOffset": 46191,
+                    "endLine": 589,
                     "endColumn": 12,
-                    "endOffset": 46323
+                    "endOffset": 46662
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4064,12 +4106,12 @@
             },
             {
                 "to": {
-                    "startLine": 583,
+                    "startLine": 590,
                     "startColumn": 4,
-                    "startOffset": 46328,
-                    "endLine": 589,
+                    "startOffset": 46667,
+                    "endLine": 596,
                     "endColumn": 12,
-                    "endOffset": 46697
+                    "endOffset": 47036
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4085,12 +4127,12 @@
             },
             {
                 "to": {
-                    "startLine": 590,
+                    "startLine": 597,
                     "startColumn": 4,
-                    "startOffset": 46702,
-                    "endLine": 594,
+                    "startOffset": 47041,
+                    "endLine": 601,
                     "endColumn": 12,
-                    "endOffset": 47076
+                    "endOffset": 47415
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4106,12 +4148,12 @@
             },
             {
                 "to": {
-                    "startLine": 595,
+                    "startLine": 602,
                     "startColumn": 4,
-                    "startOffset": 47081,
-                    "endLine": 600,
+                    "startOffset": 47420,
+                    "endLine": 607,
                     "endColumn": 12,
-                    "endOffset": 47429
+                    "endOffset": 47768
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4127,12 +4169,12 @@
             },
             {
                 "to": {
-                    "startLine": 601,
+                    "startLine": 608,
                     "startColumn": 4,
-                    "startOffset": 47434,
-                    "endLine": 607,
+                    "startOffset": 47773,
+                    "endLine": 614,
                     "endColumn": 12,
-                    "endOffset": 47889
+                    "endOffset": 48228
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4148,12 +4190,12 @@
             },
             {
                 "to": {
-                    "startLine": 608,
+                    "startLine": 615,
                     "startColumn": 4,
-                    "startOffset": 47894,
-                    "endLine": 610,
+                    "startOffset": 48233,
+                    "endLine": 617,
                     "endColumn": 12,
-                    "endOffset": 48081
+                    "endOffset": 48420
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4169,12 +4211,12 @@
             },
             {
                 "to": {
-                    "startLine": 611,
+                    "startLine": 618,
                     "startColumn": 4,
-                    "startOffset": 48086,
-                    "endLine": 614,
+                    "startOffset": 48425,
+                    "endLine": 621,
                     "endColumn": 12,
-                    "endOffset": 48340
+                    "endOffset": 48679
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4190,11 +4232,11 @@
             },
             {
                 "to": {
-                    "startLine": 615,
+                    "startLine": 622,
                     "startColumn": 4,
-                    "startOffset": 48345,
+                    "startOffset": 48684,
                     "endColumn": 105,
-                    "endOffset": 48446
+                    "endOffset": 48785
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4209,12 +4251,12 @@
             },
             {
                 "to": {
-                    "startLine": 616,
+                    "startLine": 623,
                     "startColumn": 4,
-                    "startOffset": 48451,
-                    "endLine": 621,
+                    "startOffset": 48790,
+                    "endLine": 628,
                     "endColumn": 12,
-                    "endOffset": 48890
+                    "endOffset": 49229
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4230,11 +4272,11 @@
             },
             {
                 "to": {
-                    "startLine": 622,
+                    "startLine": 629,
                     "startColumn": 4,
-                    "startOffset": 48895,
+                    "startOffset": 49234,
                     "endColumn": 111,
-                    "endOffset": 49002
+                    "endOffset": 49341
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4249,12 +4291,12 @@
             },
             {
                 "to": {
-                    "startLine": 623,
+                    "startLine": 630,
                     "startColumn": 4,
-                    "startOffset": 49007,
-                    "endLine": 633,
+                    "startOffset": 49346,
+                    "endLine": 640,
                     "endColumn": 12,
-                    "endOffset": 49701
+                    "endOffset": 50040
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4270,11 +4312,11 @@
             },
             {
                 "to": {
-                    "startLine": 634,
+                    "startLine": 641,
                     "startColumn": 4,
-                    "startOffset": 49706,
+                    "startOffset": 50045,
                     "endColumn": 109,
-                    "endOffset": 49811
+                    "endOffset": 50150
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4289,11 +4331,11 @@
             },
             {
                 "to": {
-                    "startLine": 635,
+                    "startLine": 642,
                     "startColumn": 4,
-                    "startOffset": 49816,
+                    "startOffset": 50155,
                     "endColumn": 99,
-                    "endOffset": 49911
+                    "endOffset": 50250
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4308,11 +4350,11 @@
             },
             {
                 "to": {
-                    "startLine": 636,
+                    "startLine": 643,
                     "startColumn": 4,
-                    "startOffset": 49916,
+                    "startOffset": 50255,
                     "endColumn": 111,
-                    "endOffset": 50023
+                    "endOffset": 50362
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4327,11 +4369,11 @@
             },
             {
                 "to": {
-                    "startLine": 637,
+                    "startLine": 644,
                     "startColumn": 4,
-                    "startOffset": 50028,
+                    "startOffset": 50367,
                     "endColumn": 127,
-                    "endOffset": 50151
+                    "endOffset": 50490
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4346,11 +4388,11 @@
             },
             {
                 "to": {
-                    "startLine": 638,
+                    "startLine": 645,
                     "startColumn": 4,
-                    "startOffset": 50156,
+                    "startOffset": 50495,
                     "endColumn": 113,
-                    "endOffset": 50265
+                    "endOffset": 50604
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4365,11 +4407,11 @@
             },
             {
                 "to": {
-                    "startLine": 639,
+                    "startLine": 646,
                     "startColumn": 4,
-                    "startOffset": 50270,
+                    "startOffset": 50609,
                     "endColumn": 129,
-                    "endOffset": 50395
+                    "endOffset": 50734
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4384,11 +4426,11 @@
             },
             {
                 "to": {
-                    "startLine": 640,
+                    "startLine": 647,
                     "startColumn": 4,
-                    "startOffset": 50400,
+                    "startOffset": 50739,
                     "endColumn": 115,
-                    "endOffset": 50511
+                    "endOffset": 50850
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4403,11 +4445,11 @@
             },
             {
                 "to": {
-                    "startLine": 641,
+                    "startLine": 648,
                     "startColumn": 4,
-                    "startOffset": 50516,
+                    "startOffset": 50855,
                     "endColumn": 131,
-                    "endOffset": 50643
+                    "endOffset": 50982
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4422,11 +4464,11 @@
             },
             {
                 "to": {
-                    "startLine": 642,
+                    "startLine": 649,
                     "startColumn": 4,
-                    "startOffset": 50648,
+                    "startOffset": 50987,
                     "endColumn": 115,
-                    "endOffset": 50759
+                    "endOffset": 51098
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4441,11 +4483,11 @@
             },
             {
                 "to": {
-                    "startLine": 643,
+                    "startLine": 650,
                     "startColumn": 4,
-                    "startOffset": 50764,
+                    "startOffset": 51103,
                     "endColumn": 131,
-                    "endOffset": 50891
+                    "endOffset": 51230
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4460,11 +4502,11 @@
             },
             {
                 "to": {
-                    "startLine": 644,
+                    "startLine": 651,
                     "startColumn": 4,
-                    "startOffset": 50896,
+                    "startOffset": 51235,
                     "endColumn": 105,
-                    "endOffset": 50997
+                    "endOffset": 51336
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4479,11 +4521,11 @@
             },
             {
                 "to": {
-                    "startLine": 645,
+                    "startLine": 652,
                     "startColumn": 4,
-                    "startOffset": 51002,
+                    "startOffset": 51341,
                     "endColumn": 125,
-                    "endOffset": 51123
+                    "endOffset": 51462
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4498,11 +4540,11 @@
             },
             {
                 "to": {
-                    "startLine": 646,
+                    "startLine": 653,
                     "startColumn": 4,
-                    "startOffset": 51128,
+                    "startOffset": 51467,
                     "endColumn": 123,
-                    "endOffset": 51247
+                    "endOffset": 51586
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4517,11 +4559,11 @@
             },
             {
                 "to": {
-                    "startLine": 647,
+                    "startLine": 654,
                     "startColumn": 4,
-                    "startOffset": 51252,
+                    "startOffset": 51591,
                     "endColumn": 117,
-                    "endOffset": 51365
+                    "endOffset": 51704
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4536,11 +4578,11 @@
             },
             {
                 "to": {
-                    "startLine": 648,
+                    "startLine": 655,
                     "startColumn": 4,
-                    "startOffset": 51370,
+                    "startOffset": 51709,
                     "endColumn": 119,
-                    "endOffset": 51485
+                    "endOffset": 51824
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4555,11 +4597,11 @@
             },
             {
                 "to": {
-                    "startLine": 649,
+                    "startLine": 656,
                     "startColumn": 4,
-                    "startOffset": 51490,
+                    "startOffset": 51829,
                     "endColumn": 121,
-                    "endOffset": 51607
+                    "endOffset": 51946
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4574,12 +4616,12 @@
             },
             {
                 "to": {
-                    "startLine": 650,
+                    "startLine": 657,
                     "startColumn": 4,
-                    "startOffset": 51612,
-                    "endLine": 658,
+                    "startOffset": 51951,
+                    "endLine": 665,
                     "endColumn": 12,
-                    "endOffset": 52360
+                    "endOffset": 52699
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4595,12 +4637,12 @@
             },
             {
                 "to": {
-                    "startLine": 659,
+                    "startLine": 666,
                     "startColumn": 4,
-                    "startOffset": 52365,
-                    "endLine": 663,
+                    "startOffset": 52704,
+                    "endLine": 670,
                     "endColumn": 12,
-                    "endOffset": 52729
+                    "endOffset": 53068
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4616,12 +4658,12 @@
             },
             {
                 "to": {
-                    "startLine": 664,
+                    "startLine": 671,
                     "startColumn": 4,
-                    "startOffset": 52734,
-                    "endLine": 669,
+                    "startOffset": 53073,
+                    "endLine": 676,
                     "endColumn": 12,
-                    "endOffset": 53285
+                    "endOffset": 53624
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4637,11 +4679,11 @@
             },
             {
                 "to": {
-                    "startLine": 670,
+                    "startLine": 677,
                     "startColumn": 4,
-                    "startOffset": 53290,
+                    "startOffset": 53629,
                     "endColumn": 112,
-                    "endOffset": 53398
+                    "endOffset": 53737
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4656,11 +4698,11 @@
             },
             {
                 "to": {
-                    "startLine": 671,
+                    "startLine": 678,
                     "startColumn": 4,
-                    "startOffset": 53403,
+                    "startOffset": 53742,
                     "endColumn": 126,
-                    "endOffset": 53525
+                    "endOffset": 53864
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4675,11 +4717,11 @@
             },
             {
                 "to": {
-                    "startLine": 672,
+                    "startLine": 679,
                     "startColumn": 4,
-                    "startOffset": 53530,
+                    "startOffset": 53869,
                     "endColumn": 114,
-                    "endOffset": 53640
+                    "endOffset": 53979
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4694,12 +4736,12 @@
             },
             {
                 "to": {
-                    "startLine": 673,
+                    "startLine": 680,
                     "startColumn": 4,
-                    "startOffset": 53645,
-                    "endLine": 675,
+                    "startOffset": 53984,
+                    "endLine": 682,
                     "endColumn": 12,
-                    "endOffset": 53876
+                    "endOffset": 54215
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4715,11 +4757,11 @@
             },
             {
                 "to": {
-                    "startLine": 676,
+                    "startLine": 683,
                     "startColumn": 4,
-                    "startOffset": 53881,
+                    "startOffset": 54220,
                     "endColumn": 114,
-                    "endOffset": 53991
+                    "endOffset": 54330
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4734,11 +4776,11 @@
             },
             {
                 "to": {
-                    "startLine": 677,
+                    "startLine": 684,
                     "startColumn": 4,
-                    "startOffset": 53996,
+                    "startOffset": 54335,
                     "endColumn": 128,
-                    "endOffset": 54120
+                    "endOffset": 54459
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4753,11 +4795,11 @@
             },
             {
                 "to": {
-                    "startLine": 678,
+                    "startLine": 685,
                     "startColumn": 4,
-                    "startOffset": 54125,
+                    "startOffset": 54464,
                     "endColumn": 104,
-                    "endOffset": 54225
+                    "endOffset": 54564
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4772,11 +4814,11 @@
             },
             {
                 "to": {
-                    "startLine": 679,
+                    "startLine": 686,
                     "startColumn": 4,
-                    "startOffset": 54230,
+                    "startOffset": 54569,
                     "endColumn": 120,
-                    "endOffset": 54346
+                    "endOffset": 54685
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4791,12 +4833,12 @@
             },
             {
                 "to": {
-                    "startLine": 680,
+                    "startLine": 687,
                     "startColumn": 4,
-                    "startOffset": 54351,
-                    "endLine": 682,
+                    "startOffset": 54690,
+                    "endLine": 689,
                     "endColumn": 12,
-                    "endOffset": 54571
+                    "endOffset": 54910
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4812,12 +4854,12 @@
             },
             {
                 "to": {
-                    "startLine": 683,
+                    "startLine": 690,
                     "startColumn": 4,
-                    "startOffset": 54576,
-                    "endLine": 686,
+                    "startOffset": 54915,
+                    "endLine": 693,
                     "endColumn": 12,
-                    "endOffset": 54936
+                    "endOffset": 55275
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4833,12 +4875,12 @@
             },
             {
                 "to": {
-                    "startLine": 687,
+                    "startLine": 694,
                     "startColumn": 4,
-                    "startOffset": 54941,
-                    "endLine": 689,
+                    "startOffset": 55280,
+                    "endLine": 696,
                     "endColumn": 12,
-                    "endOffset": 55153
+                    "endOffset": 55492
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4854,12 +4896,12 @@
             },
             {
                 "to": {
-                    "startLine": 690,
+                    "startLine": 697,
                     "startColumn": 4,
-                    "startOffset": 55158,
-                    "endLine": 694,
+                    "startOffset": 55497,
+                    "endLine": 701,
                     "endColumn": 12,
-                    "endOffset": 55540
+                    "endOffset": 55879
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4875,11 +4917,11 @@
             },
             {
                 "to": {
-                    "startLine": 695,
+                    "startLine": 702,
                     "startColumn": 4,
-                    "startOffset": 55545,
+                    "startOffset": 55884,
                     "endColumn": 120,
-                    "endOffset": 55661
+                    "endOffset": 56000
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4894,12 +4936,12 @@
             },
             {
                 "to": {
-                    "startLine": 696,
+                    "startLine": 703,
                     "startColumn": 4,
-                    "startOffset": 55666,
-                    "endLine": 702,
+                    "startOffset": 56005,
+                    "endLine": 709,
                     "endColumn": 12,
-                    "endOffset": 56129
+                    "endOffset": 56468
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4915,12 +4957,12 @@
             },
             {
                 "to": {
-                    "startLine": 703,
+                    "startLine": 710,
                     "startColumn": 4,
-                    "startOffset": 56134,
-                    "endLine": 705,
+                    "startOffset": 56473,
+                    "endLine": 712,
                     "endColumn": 12,
-                    "endOffset": 56328
+                    "endOffset": 56667
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4936,11 +4978,11 @@
             },
             {
                 "to": {
-                    "startLine": 706,
+                    "startLine": 713,
                     "startColumn": 4,
-                    "startOffset": 56333,
+                    "startOffset": 56672,
                     "endColumn": 117,
-                    "endOffset": 56446
+                    "endOffset": 56785
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4955,12 +4997,12 @@
             },
             {
                 "to": {
-                    "startLine": 707,
+                    "startLine": 714,
                     "startColumn": 4,
-                    "startOffset": 56451,
-                    "endLine": 711,
+                    "startOffset": 56790,
+                    "endLine": 718,
                     "endColumn": 12,
-                    "endOffset": 56825
+                    "endOffset": 57164
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4976,11 +5018,11 @@
             },
             {
                 "to": {
-                    "startLine": 712,
+                    "startLine": 719,
                     "startColumn": 4,
-                    "startOffset": 56830,
+                    "startOffset": 57169,
                     "endColumn": 121,
-                    "endOffset": 56947
+                    "endOffset": 57286
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -4995,11 +5037,11 @@
             },
             {
                 "to": {
-                    "startLine": 713,
+                    "startLine": 720,
                     "startColumn": 4,
-                    "startOffset": 56952,
+                    "startOffset": 57291,
                     "endColumn": 111,
-                    "endOffset": 57059
+                    "endOffset": 57398
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5014,11 +5056,11 @@
             },
             {
                 "to": {
-                    "startLine": 714,
+                    "startLine": 721,
                     "startColumn": 4,
-                    "startOffset": 57064,
+                    "startOffset": 57403,
                     "endColumn": 115,
-                    "endOffset": 57175
+                    "endOffset": 57514
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5033,11 +5075,11 @@
             },
             {
                 "to": {
-                    "startLine": 715,
+                    "startLine": 722,
                     "startColumn": 4,
-                    "startOffset": 57180,
+                    "startOffset": 57519,
                     "endColumn": 99,
-                    "endOffset": 57275
+                    "endOffset": 57614
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5052,11 +5094,11 @@
             },
             {
                 "to": {
-                    "startLine": 716,
+                    "startLine": 723,
                     "startColumn": 4,
-                    "startOffset": 57280,
+                    "startOffset": 57619,
                     "endColumn": 114,
-                    "endOffset": 57390
+                    "endOffset": 57729
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5071,11 +5113,11 @@
             },
             {
                 "to": {
-                    "startLine": 717,
+                    "startLine": 724,
                     "startColumn": 4,
-                    "startOffset": 57395,
+                    "startOffset": 57734,
                     "endColumn": 99,
-                    "endOffset": 57490
+                    "endOffset": 57829
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5090,11 +5132,11 @@
             },
             {
                 "to": {
-                    "startLine": 718,
+                    "startLine": 725,
                     "startColumn": 4,
-                    "startOffset": 57495,
+                    "startOffset": 57834,
                     "endColumn": 103,
-                    "endOffset": 57594
+                    "endOffset": 57933
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5109,11 +5151,11 @@
             },
             {
                 "to": {
-                    "startLine": 719,
+                    "startLine": 726,
                     "startColumn": 4,
-                    "startOffset": 57599,
+                    "startOffset": 57938,
                     "endColumn": 95,
-                    "endOffset": 57690
+                    "endOffset": 58029
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5128,11 +5170,11 @@
             },
             {
                 "to": {
-                    "startLine": 720,
+                    "startLine": 727,
                     "startColumn": 4,
-                    "startOffset": 57695,
+                    "startOffset": 58034,
                     "endColumn": 87,
-                    "endOffset": 57778
+                    "endOffset": 58117
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5147,11 +5189,11 @@
             },
             {
                 "to": {
-                    "startLine": 721,
+                    "startLine": 728,
                     "startColumn": 4,
-                    "startOffset": 57783,
+                    "startOffset": 58122,
                     "endColumn": 91,
-                    "endOffset": 57870
+                    "endOffset": 58209
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5166,11 +5208,11 @@
             },
             {
                 "to": {
-                    "startLine": 722,
+                    "startLine": 729,
                     "startColumn": 4,
-                    "startOffset": 57875,
+                    "startOffset": 58214,
                     "endColumn": 113,
-                    "endOffset": 57984
+                    "endOffset": 58323
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",
@@ -5185,11 +5227,11 @@
             },
             {
                 "to": {
-                    "startLine": 723,
+                    "startLine": 730,
                     "startColumn": 4,
-                    "startOffset": 57989,
+                    "startOffset": 58328,
                     "endColumn": 102,
-                    "endOffset": 58087
+                    "endOffset": 58426
                 },
                 "from": {
                     "file": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\values\\values.xml",

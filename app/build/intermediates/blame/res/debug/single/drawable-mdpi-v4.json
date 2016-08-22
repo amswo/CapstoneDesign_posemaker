@@ -156,6 +156,10 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\drawable-mdpi\\abc_ab_share_pack_holo_light.9.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\login.jpg",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\drawable-mdpi\\login.jpg"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_cab_done_holo_dark.png",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\drawable-mdpi\\abc_ic_cab_done_holo_dark.png"
     },

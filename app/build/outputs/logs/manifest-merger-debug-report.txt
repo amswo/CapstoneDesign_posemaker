@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-40:12
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-47:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:4:5-48
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
@@ -23,16 +23,8 @@ uses-permission#android.permission.BLUETOOTH
 ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:9:5-68
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:9:22-65
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:11:5-81
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:11:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:12:5-80
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:12:22-77
 application
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:14:5-38:19
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:14:5-45:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml:17:5-19
 	android:label
@@ -71,6 +63,28 @@ ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\A
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:34:13-56
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:30:13-47
+activity#com.example.android.BluetoothChat.HomeActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:35:9-59
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:35:19-47
+activity#com.example.android.BluetoothChat.SettingActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:36:9-62
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:36:19-50
+activity#com.example.android.BluetoothChat.InitialPoseActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:9-66
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:37:19-54
+activity#com.example.android.BluetoothChat.SplashActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:38:9-41:63
+	android:screenOrientation
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:39:13-49
+	android:configChanges
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:40:13-63
+	android:theme
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:13-60
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:38:19-49
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:16:5-42

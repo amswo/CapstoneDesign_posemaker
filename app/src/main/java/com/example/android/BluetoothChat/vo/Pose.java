@@ -5,25 +5,23 @@ package com.example.android.BluetoothChat.vo;
  */
 public class Pose {
     private int _id;
-    private String ax;
-    private String ay;
-    private String az;
-
-
+    private int ax;
+    private int ay;
+    private int az;
 
     public int get_id() {
         return _id;
     }
 
-    public String getAx() {
+    public int getAx() {
         return ax;
     }
 
-    public String getAy() {
+    public int getAy() {
         return ay;
     }
 
-    public String getAz() {
+    public int getAz() {
         return az;
     }
 
@@ -31,15 +29,15 @@ public class Pose {
         this._id = _id;
     }
 
-    public void setAx(String ax) {
+    public void setAx(int ax) {
         this.ax = ax;
     }
 
-    public void setAy(String ay) {
+    public void setAy(int ay) {
         this.ay = ay;
     }
 
-    public void setAz(String az) {
+    public void setAz(int az) {
         this.az = az;
     }
 }

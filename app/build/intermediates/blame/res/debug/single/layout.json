@@ -4,10 +4,6 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_decor_overlay.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alarm.xml",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\alarm.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\message.xml"
     },
@@ -16,16 +12,20 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_home.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_name.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\device_name.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_mode_close_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\setting.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
@@ -116,8 +120,16 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\home.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\initial_pose.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\layout\\initial_pose.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_title.xml",

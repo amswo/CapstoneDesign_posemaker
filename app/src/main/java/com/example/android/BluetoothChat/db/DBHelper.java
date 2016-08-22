@@ -28,9 +28,9 @@ public class DBHelper extends SQLiteOpenHelper {
         StringBuffer sb = new StringBuffer();
         sb.append("CREATE TABLE TEST_TABLE(");
         sb.append("_ID INTEGER PRIMARY KEY AUTOINCREMENT,");
-        sb.append("AX TEXT NOT NULL,");
-        sb.append("AY TEXT NOT NULL,");
-        sb.append("AZ TEXT NOT NULL);");
+        sb.append("AX INTEGER NOT NULL,");
+        sb.append("AY INTEGER NOT NULL,");
+        sb.append("AZ INTEGER NOT NULL);");
 
         //SQL 실행
         db.execSQL(sb.toString());
@@ -93,9 +93,9 @@ public class DBHelper extends SQLiteOpenHelper {
         while (cursor.moveToNext()){
             pose = new Pose();
             pose.set_id(cursor.getInt(0));
-            pose.setAx(cursor.getString(1));
-            pose.setAy(cursor.getString(2));
-            pose.setAz(cursor.getString(3));
+            pose.setAx(cursor.getInt(1));
+            pose.setAy(cursor.getInt(2));
+            pose.setAz(cursor.getInt(3));
 
             poses.add(pose);
 

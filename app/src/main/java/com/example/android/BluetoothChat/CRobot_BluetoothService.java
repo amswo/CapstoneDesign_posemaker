@@ -340,7 +340,6 @@ public class CRobot_BluetoothService {
         }
     }
 
-
     private class ConnectedThread extends Thread {
         private final BluetoothSocket mmSocket;
         private final InputStream mmInStream;

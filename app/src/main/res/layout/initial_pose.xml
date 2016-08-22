@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3f403f"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:background="#08b9aa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기 자세 설정 화면"
+            android:id="@+id/setting_textView"
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#404140"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="초기 자세를 설정하세요"
+        android:id="@+id/myInformation_textview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:enabled="true"  />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/pose"
+        android:id="@+id/imageView4" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/text">
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingTop="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="24dp"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingTop="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="95dp" />
+
+        <Button
+            android:layout_width="273dp"
+            android:layout_height="60dp"
+            android:text=""
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="#00000000"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

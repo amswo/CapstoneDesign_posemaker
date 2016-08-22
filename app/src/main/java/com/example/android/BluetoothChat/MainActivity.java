@@ -33,17 +33,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-
-    private Button btnAlarm;
-
-    // 알람
-    static final String TAG1 = "AlarmActivity";
-
-    String rid;
-    String senderId = "653402390386";
+//    String rid;
+//    String senderId = "653402390386";
 
     // 알람
-    private Button btn1;
     private Button btn2;
     private TextView time_info;
 
@@ -51,14 +44,17 @@ public class MainActivity extends Activity {
     private LinearLayout ll;
 
     //DB
-    private Button btnCreateDatabase;
     private DBHelper dbHelper;
-    private Button btnInsertData;
     private Button btnSelectAllDatas;
     private ListView IvPoses;
 
+    private Button btnStart;
+
+
     // Home 버튼
     private Button btnHome;
+
+    private Button btnCompare;
 
     // 초기값을 위한 변수들
     public int cnt=0;
@@ -113,6 +109,8 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) { // 
         super.onCreate(savedInstanceState);
 
+
+
         // Set up the window layout
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.main);// setContentView
@@ -125,104 +123,16 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.main);
 
+        startActivity(new Intent(this, SplashActivity.class));
+
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         // If the adapter is null, then Bluetooth is not supported
         if (mBluetoothAdapter == null) {
-            Toast.makeText(this, "Bluetooth is not available", Toast.LENGTH_LONG).show();
-            finish();
-            return;
+                Toast.makeText(this, "Bluetooth is not available", Toast.LENGTH_LONG).show();
+                finish();
+                return;
         }
-
-        // DB 생성
-        btnCreateDatabase = (Button) findViewById(R.id.btnCreateDatabase);
-        btnCreateDatabase.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-//                final EditText etDBName = new EditText(MainActivity.this);
-//                etDBName.setHint("DB명을 입력하세요");
-                final String etDBName = "datatest"; // DB이름
-
-                // Dialog로 database의 이름을 입력 받음
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog
-//                        .setTitle("Database 이름 입력")
-//                        .setMessage("Database 이름 입력")
-//                        .setView(etDBName)
-//                        .setView(etDBName)
-                        .setPositiveButton("생성", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (etDBName.length() > 0) {
-                                    dbHelper = new DBHelper(MainActivity.this,  etDBName, null, 1); //etDBName.getText().toString() + "/mnt/sdcard/"
-                                    dbHelper.testDB();
-                                }
-                            }
-                        }).setNeutralButton("취소", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                }).create().show();
-
-            }
-        });
-
-        // Data 입력
-        btnInsertData = (Button) findViewById(R.id.btnInsertData);
-        btnInsertData.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                LinearLayout layout = new LinearLayout(MainActivity.this);
-                layout.setOrientation(LinearLayout.VERTICAL);
-
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog.setTitle("정보 입력")
-                        .setView(layout)
-                        .setPositiveButton("등록", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-
-                                String ax = String.format("%6d", initAx);
-                                String ay = String.format("%6d", initAy);
-                                String az = String.format("%6d", initAz);
-
-                                if (dbHelper == null) {
-                                    dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
-                                }
-
-                                Pose pose = new Pose();
-
-                                // db
-                                pose.setAx(ax.toString());
-                                pose.setAy(ay.toString());
-                                pose.setAz(az.toString());
-
-                                dbHelper.addPose(pose);
-
-
-                            }
-                        }).setNeutralButton("취소", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                }).create().show();
-            }
-        });
-
-
-        // Data 가져오기
-        IvPoses = (ListView) findViewById(R.id.IvPoses);
-        btnSelectAllDatas = (Button) findViewById(R.id.btnSelectAllDatas);
-        btnSelectAllDatas.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                IvPoses.setVisibility(View.VISIBLE);
-
-                if (dbHelper == null) {
-                    dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
-                }
-
-                List<com.example.android.BluetoothChat.vo.Pose> poses = dbHelper.getAllPoses();
-
-                IvPoses.setAdapter(new PoseListAdapter(poses, MainActivity.this));
-
-            }
-        });
 
 //        // 이메일로 data 전송하기
 //        Button btnEmail = (Button) findViewById(R.id.btnEmail);
@@ -260,10 +170,12 @@ public class MainActivity extends Activity {
 //        });
 //
 
+        dbCreate();
+        getDB();
+//        compareStart();
 
-        // alaram
+        // alarm
         time_info = (TextView) findViewById(R.id.chronometer);
-        btn1 = (Button) findViewById(R.id.buttonstart);
         btn2 = (Button) findViewById(R.id.buttonreset);
 
         chronometer = (Chronometer) findViewById(R.id.chronometer);
@@ -275,12 +187,11 @@ public class MainActivity extends Activity {
             public void onChronometerTick(Chronometer chronometer) {
                 long elapseMills = SystemClock.elapsedRealtime() - chronometer.getBase();
                 DecimalFormat numFormat = new DecimalFormat("###,###");
-                String num =  numFormat.format(30000);
+                String num = numFormat.format(30000);
                 String output = numFormat.format(elapseMills);
                 time_info.setText("Total sec : " + output);
 
-                if(output.startsWith("10"))
-                {
+                if (output.startsWith("10")) {
                     AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
                     dialog.setTitle("올바르지 않은 자세를 30초간 유지했습니다.");
                     dialog.setMessage("다시한번 바르게 앉아주세요");
@@ -290,30 +201,99 @@ public class MainActivity extends Activity {
                         }
                     });
                     dialog.show();
-
                 }
-
-            }
-        });
-
-        btn1.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View v) {
-                chronometer.setBase(SystemClock.elapsedRealtime());
-                chronometer.start();
             }
         });
 
         btn2.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 chronometer.stop();
+                chronometer.setBase(SystemClock.elapsedRealtime());
             }
         });
+
+        // Home 이동
+        btnHome = (Button)findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+    }
+
+    public void alarmStart() {
+        chronometer.setBase(SystemClock.elapsedRealtime());
+        chronometer.start();
+    }
+
+    // DB 생성을 위한 함수
+    public void dbCreate() {
+        final String etDBName = "datatest"; // DB 이름
+        dbHelper = new DBHelper(MainActivity.this, etDBName, null, 1); //etDBName.getText().toString() + "/mnt/sdcard/"
+        dbHelper.testDB();
+    }
+
+    // DB에 data 입력을 위한 함수
+    public void dataCreate(){
+        LinearLayout layout = new LinearLayout(MainActivity.this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+
+        int ax = initAx;
+        int ay = initAy;
+        int az = initAz;
+
+        if (dbHelper == null) {
+            dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
+        }
+
+        Pose pose = new Pose();
+        // db
+        pose.setAx(ax);
+        pose.setAy(ay);
+        pose.setAz(az);
+
+        dbHelper.addPose(pose);
+    }
+
+    public void getDB(){
+        IvPoses = (ListView) findViewById(R.id.IvPoses);
+        btnSelectAllDatas = (Button) findViewById(R.id.btnSelectAllDatas);
+        btnSelectAllDatas.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                IvPoses.setVisibility(View.VISIBLE);
+
+                if (dbHelper == null) {
+                    dbHelper = new DBHelper(MainActivity.this, "TEST", null, 1);
+                }
+
+                List<com.example.android.BluetoothChat.vo.Pose> poses = dbHelper.getAllPoses();
+
+                IvPoses.setAdapter(new PoseListAdapter(poses, MainActivity.this));
+
+            }
+        });
+    }
+
+    public void compareStart(int Ax, int Ay, int Az){
+        btnCompare = (Button)findViewById(R.id.btnCompare);
+        List<com.example.android.BluetoothChat.vo.Pose> poses = dbHelper.getAllPoses();
+
+//        IvPoses.setAdapter(new PoseListAdapter(poses, MainActivity.this));
+        btnCompare.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+
+
+            }
+        });
+
     }
 
     @Override
     public void onStart() {
         super.onStart();
-
         // 블루투스 기능 잠시 꺼놓음
 //         If BT is not on, request that it be enabled.
 //         setupChat() will then be called during onActivityResult
@@ -330,20 +310,19 @@ public class MainActivity extends Activity {
         }
 
         // mode1 버튼이 눌렸을 때
-        findViewById(R.id.btnStart).setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-                        Log.d("TX", "start");
-                        sendMessage1((byte) 'a');
-                    }
-                }
-        );
+        //test
+        btnStart = (Button)findViewById(R.id.btnStart);
+        btnStart.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v){
+                Log.d("TX", "start");
+                sendMessage1((byte) 'a');
+            }
+        });
     }
 
     @Override
     public synchronized void onResume() {
         super.onResume();
-
         // Performing this check in onResume() covers the case in which BT was
         // not enabled during onStart(), so we were paused to enable it...
         // onResume() will be called when ACTION_REQUEST_ENABLE activity returns.
@@ -354,7 +333,6 @@ public class MainActivity extends Activity {
               mChatService.start();
             }
         }
-
     }
 
     private void setupChat() {
@@ -394,14 +372,13 @@ public class MainActivity extends Activity {
         mOutStringBuffer.setLength(0);
     }
 
-
  String strRxData ="";
     // The Handler that gets information back from the BluetoothChatService
  private final Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
           switch (msg.what) {
-            case MESSAGE_STATE_CHANGE: // 占쏙옙占쏙옙占쏙옙占�占쏙옙占쏙옙
+            case MESSAGE_STATE_CHANGE:
                 switch (msg.arg1) {
                 case CRobot_BluetoothService.STATE_CONNECTED:
                     mTitle.setText(R.string.title_connected_to);
@@ -434,7 +411,7 @@ public class MainActivity extends Activity {
                           String[] sData = separated[i].split(",");
                           if (sData.length == 6) {
                               if ((sData[0] != "") && (sData[1] !="") && (sData[2] != "")) {
-                                  // Log.d("RX:", "AX:" + sData[0] + ", AY:" + sData[1] + ", AZ:" + sData[2] + ", GX:" + sData[3] + ", GY:" + sData[4] + ", GZ:" + sData[5]);
+                                   Log.d("RX:", "AX:" + sData[0] + ", AY:" + sData[1] + ", AZ:" + sData[2] + ", GX:" + sData[3] + ", GY:" + sData[4] + ", GZ:" + sData[5]);
 
                                   num1 = Integer.parseInt(sData[0]);
                                   num2 = Integer.parseInt(sData[1]);
@@ -472,8 +449,6 @@ public class MainActivity extends Activity {
         }
     };
 
-
-
 //     초기값을 위한 계산함수
     public void calculate (int cnum1, int cnum2, int cnum3){
         SumAx += cnum1;
@@ -489,14 +464,15 @@ public class MainActivity extends Activity {
 
             ((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) +String.format("%6d", initAx) +
                     String.format("%6d", initAy) + String.format("%6d", initAz));
+            dataCreate();
+            alarmStart();
+            compareStart(initAx,initAy,initAz);
         }
         else{
             //((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) + String.format("%6d", SumAx) +
             //String.format("%6d", SumAy) + String.format("%6d", SumAz));
         }
-
     }
-
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {

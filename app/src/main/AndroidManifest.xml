@@ -8,8 +8,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
 
     <application
         android:icon="@drawable/app_icon"
@@ -32,6 +32,13 @@
             android:label="@string/select_device"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".InitialPoseActivity"></activity>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" />
 
 
 

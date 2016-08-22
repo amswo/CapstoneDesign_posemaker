@@ -10,31 +10,36 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="50"
-            android:id="@+id/sdfsdffsd">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="4.02"
+                    android:layout_weight="1.12"
                     android:layout_gravity="center">
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="START"
+                        android:text="초기자세"
                         android:id="@+id/btnStart"
                         android:layout_marginTop="37dp"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="값비교"
+                        android:id="@+id/btnCompare"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOME"
+                        android:id="@+id/btnHome"
+                        android:layout_alignTop="@+id/btnSelectAllDatas"
+                        android:layout_alignParentLeft="true" />
 
                     <Button
                         android:layout_width="wrap_content"
@@ -44,53 +49,20 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignRight="@+id/btnSelectAllDatas" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="DB생성"
-                        android:id="@+id/btnCreateDatabase"
-                        android:layout_below="@+id/btnStart"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginTop="42dp" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="DATA생성"
-                        android:id="@+id/btnInsertData"
-                        android:layout_alignTop="@+id/btnCreateDatabase"
-                        android:layout_centerHorizontal="true" />
-
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="DATA 가져오기"
                         android:id="@+id/btnSelectAllDatas"
-                        android:layout_alignTop="@+id/btnInsertData"
+                        android:layout_below="@+id/btnEmail"
                         android:layout_alignParentRight="true" />
-
-                    <Chronometer
-                        android:id="@+id/chronometer"
-                        android:layout_width="fill_parent"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal" />
-
-                    <Button
-                        android:id="@+id/buttonstart"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AlarmStart"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentLeft="true" />
 
                     <Button
                         android:id="@+id/buttonreset"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="AlarmReset"
-                        android:layout_below="@+id/buttonstart"
                         android:layout_alignParentLeft="true" />
                 </RelativeLayout>
 
@@ -111,50 +83,28 @@
                         android:textColor="@android:color/black" />
 
 
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/database_test"
-                    android:layout_width="match_parent"
-                    android:layout_height="61dp"
-                    android:layout_weight="1.10">
-
-
-
                     <ListView
                         android:id="@+id/IvPoses"
                         android:textColor="@android:color/black"
                         android:visibility="invisible"
                         android:layout_width="wrap_content"
-                        android:layout_height="339dp"
+                        android:layout_height="100dp"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true">
                     </ListView>
 
+                    <Chronometer
+                        android:id="@+id/chronometer"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true" />
+
                 </RelativeLayout>
 
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/tv_NowStatus"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:textColor="#000000"
-                android:textSize="15dp" />
-
-        </RelativeLayout>
 
 
 
