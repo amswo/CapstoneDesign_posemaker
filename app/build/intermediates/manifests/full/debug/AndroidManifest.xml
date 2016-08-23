@@ -18,7 +18,8 @@
             android:name="com.example.android.BluetoothChat.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,13 +33,16 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name="com.example.android.BluetoothChat.HomeActivity" />
-        <activity android:name="com.example.android.BluetoothChat.SettingActivity" />
+        <activity
+            android:name="com.example.android.BluetoothChat.SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity android:name="com.example.android.BluetoothChat.InitialPoseActivity" />
         <activity
             android:name="com.example.android.BluetoothChat.SplashActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.example.android.BluetoothChat.PoseTypeAcitvity" />
     </application>
 
 </manifest>

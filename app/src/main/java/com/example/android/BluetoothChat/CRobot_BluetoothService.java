@@ -80,7 +80,7 @@ public class CRobot_BluetoothService {
         mState = state;
 
         // Give the new state to the Handler so the UI Activity can update
-        mHandler.obtainMessage(HomeActivity.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
+        mHandler.obtainMessage(InitialPoseActivity.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
     }
 
     /**
@@ -146,9 +146,9 @@ public class CRobot_BluetoothService {
         mConnectedThread.start();
 
         // Send the name of the connected device back to the UI Activity
-        Message msg = mHandler.obtainMessage(HomeActivity.MESSAGE_DEVICE_NAME);
+        Message msg = mHandler.obtainMessage(InitialPoseActivity.MESSAGE_DEVICE_NAME);
         Bundle bundle = new Bundle();
-        bundle.putString(HomeActivity.DEVICE_NAME, device.getName());
+        bundle.putString(InitialPoseActivity.DEVICE_NAME, device.getName());
         msg.setData(bundle);
         mHandler.sendMessage(msg);
 
@@ -190,9 +190,9 @@ public class CRobot_BluetoothService {
         setState(STATE_LISTEN);
 
         // Send a failure message back to the Activity
-        Message msg = mHandler.obtainMessage(HomeActivity.MESSAGE_TOAST);
+        Message msg = mHandler.obtainMessage(InitialPoseActivity.MESSAGE_TOAST);
         Bundle bundle = new Bundle();
-        bundle.putString(HomeActivity.TOAST, "Unable to connect device");
+        bundle.putString(InitialPoseActivity.TOAST, "Unable to connect device");
         msg.setData(bundle);
         mHandler.sendMessage(msg);
     }
@@ -204,9 +204,9 @@ public class CRobot_BluetoothService {
         setState(STATE_LISTEN);
 
         // Send a failure message back to the Activity
-        Message msg = mHandler.obtainMessage(HomeActivity.MESSAGE_TOAST);
+        Message msg = mHandler.obtainMessage(InitialPoseActivity.MESSAGE_TOAST);
         Bundle bundle = new Bundle();
-        bundle.putString(HomeActivity.TOAST, "Device connection was lost");
+        bundle.putString(InitialPoseActivity.TOAST, "Device connection was lost");
         msg.setData(bundle);
         mHandler.sendMessage(msg);
     }
@@ -375,7 +375,7 @@ public class CRobot_BluetoothService {
                     bytes = mmInStream.read(buffer);
 
                     // Send the obtained bytes to the UI Activity // ui activity �� ���� ����Ʈ ������
-                    mHandler.obtainMessage(HomeActivity.MESSAGE_READ, bytes, -1, buffer)
+                    mHandler.obtainMessage(InitialPoseActivity.MESSAGE_READ, bytes, -1, buffer)
                             .sendToTarget();
                 } catch (IOException e) {
                     connectionLost();
@@ -393,7 +393,7 @@ public class CRobot_BluetoothService {
                 mmOutStream.write(buffer);
 
                 // Share the sent message back to the UI Activity
-                mHandler.obtainMessage(HomeActivity.MESSAGE_WRITE, -1, -1, buffer)
+                mHandler.obtainMessage(InitialPoseActivity.MESSAGE_WRITE, -1, -1, buffer)
                         .sendToTarget();
             } catch (IOException e) {
                 Log.e(TAG, "Exception during write", e);
