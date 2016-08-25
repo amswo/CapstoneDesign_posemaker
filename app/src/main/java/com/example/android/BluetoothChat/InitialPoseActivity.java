@@ -44,10 +44,18 @@ import java.util.List;
  * Created by user on 2016-08-22.
  */
 public class InitialPoseActivity extends Activity {
+
+    TextView setting_textview;
+    TextView initialpose_textview;
     TextView poseposition;
     TextView shoulder;
     TextView waist;
+
     Button btnInitialPose;
+    Button btnPoseStart;
+
+    public boolean btnStart = false;
+    public int compareCnt = 0;
 
     // 알람
 //    private Button btn2;
@@ -61,7 +69,6 @@ public class InitialPoseActivity extends Activity {
 //    private Button btnSelectAllDatas;
 //    private ListView IvPoses;
 
-
     // 초기값을 위한 변수들
     public int cnt=0;
     public int SumAx=0;
@@ -73,6 +80,10 @@ public class InitialPoseActivity extends Activity {
     public int initAx=0;
     public int initAy=0;
     public int initAz=0;
+
+    public int difAx = 0;
+    public int difAy = 0;
+    public int difAz = 0;
 
 
     public int RxCount = 0;
@@ -108,6 +119,7 @@ public class InitialPoseActivity extends Activity {
     private BluetoothAdapter mBluetoothAdapter = null;
     // Member object for the chat services
     private CRobot_BluetoothService mChatService = null;
+    private CRobot_BluetoothService mChatService2 = null;
     protected Object TAG;
 
 
@@ -132,6 +144,21 @@ public class InitialPoseActivity extends Activity {
 
         setContentView(R.layout.initial_pose);
 
+        setting_textview = (TextView) findViewById(R.id.setting_textView);
+        setting_textview.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+
+        initialpose_textview = (TextView) findViewById(R.id.initialpose_textView);
+        initialpose_textview.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+
+        poseposition = (TextView) findViewById(R.id.poseposition_view);
+        poseposition.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+
+        shoulder = (TextView) findViewById(R.id.shoulder);
+        shoulder.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+
+        waist = (TextView) findViewById(R.id.waist);
+        waist.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -141,6 +168,7 @@ public class InitialPoseActivity extends Activity {
             finish();
             return;
         }
+
 
         dbCreate();
 
@@ -273,7 +301,15 @@ public class InitialPoseActivity extends Activity {
 
     }
 
-
+    // DB안 초기값data 가져오기
+//    public void getInitialData(){
+//        if (dbHelper == null) {
+//            dbHelper = new DBHelper(InitialPoseActivity.this, "datatest", null, 1);
+//        }
+//
+//        List<com.example.android.BluetoothChat.vo.Pose> poses = dbHelper.getAllPoses();
+//    }
+//
 
     @Override
     public void onStart() {
@@ -281,20 +317,21 @@ public class InitialPoseActivity extends Activity {
         // 블루투스 기능 잠시 꺼놓음
 //         If BT is not on, request that it be enabled.
 //         setupChat() will then be called during onActivityResult
-        if (!mBluetoothAdapter.isEnabled())
-        {
-          Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            if (!mBluetoothAdapter.isEnabled())
+            {
+                Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
 
 
-          startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+                startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
         // Otherwise, setup the chat session
         }
         else {
             if (mChatService == null) setupChat();
         }
-//
-//
-//        // 자세 '설정하기' 버튼
+
+
+
+//        // '초기자세설정' 버튼 실행
         btnInitialPose = (Button)findViewById(R.id.initposebutton);
         btnInitialPose.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View v){
@@ -302,6 +339,16 @@ public class InitialPoseActivity extends Activity {
                 sendMessage1((byte) 'a');
                 CreateProgressDialog();
                 ShowProgressDialog();
+            }
+        });
+
+        // '자세교정시작' 버튼 실행
+        btnPoseStart = (Button)findViewById(R.id.btnPoseStart);
+        btnPoseStart.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v){
+                Log.d("TX", "자세교정시작 START");
+                sendMessage1((byte) 'a');
+                btnStart = true;
             }
         });
     }
@@ -317,6 +364,13 @@ public class InitialPoseActivity extends Activity {
             if (mChatService.getState() == CRobot_BluetoothService.STATE_NONE) {
                 // Start the Bluetooth chat services
                 mChatService.start();
+            }
+        }
+        if (mChatService2 != null) {
+            // Only if the state is STATE_NONE, do we know that we haven't started already
+            if (mChatService2.getState() == CRobot_BluetoothService.STATE_NONE) {
+                // Start the Bluetooth chat services
+                mChatService2.start();
             }
         }
     }
@@ -337,6 +391,7 @@ public class InitialPoseActivity extends Activity {
         super.onDestroy();
         // Stop the Bluetooth chat services
         if (mChatService != null) mChatService.stop();
+        if (mChatService2 != null) mChatService2.stop();
     }
 
     private void ensureDiscoverable() {
@@ -404,6 +459,10 @@ public class InitialPoseActivity extends Activity {
                                     num3 = Integer.parseInt(sData[2]);
                                     calculate(num1, num2, num3);
 
+                                    if(btnStart){
+                                        compareDif(num1,num2,num3);
+                                    }
+
                                     strRxData = "";
                                     break;
                                 }
@@ -435,7 +494,23 @@ public class InitialPoseActivity extends Activity {
         }
     };
 
-    //     초기값을 위한 계산함수
+
+    // 비교
+    public void compareDif(int num1, int num2, int num3){
+        difAx = Math.abs(initAx - num1);
+        difAy = Math.abs(initAy - num2);
+        difAz = Math.abs(initAz - num3);
+
+        Log.d("RX:", "difAx:" + difAx +", difAy:"+ difAy+", difAz:"+difAz);
+
+        if(difAx>=50 && difAy>=25 && difAz>=230){
+            Toast.makeText(getApplicationContext(), "자세를 바르게 앉으세요", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
+
+    // 초기값을 위한 계산함수
     public void calculate (int cnum1, int cnum2, int cnum3){
         SumAx += cnum1;
         SumAy += cnum2;
@@ -451,6 +526,7 @@ public class InitialPoseActivity extends Activity {
 //            ((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) + String.format("%6d", initAx) +
 //                    String.format("%6d", initAy) + String.format("%6d", initAz));
             dataCreate();
+            Log.d("RX:", "initAx: "+ initAx+ ", initAy: "+ initAy +", initAz: "+ initAz);
 
         }
         else{
@@ -458,6 +534,7 @@ public class InitialPoseActivity extends Activity {
             //String.format("%6d", SumAy) + String.format("%6d", SumAz));
         }
     }
+
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
@@ -515,7 +592,6 @@ public class InitialPoseActivity extends Activity {
     {
         super.onPause();
     }
-
 
 
     // Adapter와 Holder

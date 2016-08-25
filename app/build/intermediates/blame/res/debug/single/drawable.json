@@ -28,6 +28,10 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btnposestart.png",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\drawable\\btnposestart.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_icon.png",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\drawable\\app_icon.png"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btninitialpose.png",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\src\\main\\res\\drawable\\btninitialpose.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\kalman_app2\\kalman\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\login.jpg",

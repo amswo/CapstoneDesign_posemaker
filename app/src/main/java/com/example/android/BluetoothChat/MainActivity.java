@@ -35,7 +35,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     TextView btnInitialPose;
-    TextView btnPoseType;
+    Button btnPoseType;
     TextView btnSetting;
 
     @Override
@@ -54,13 +54,21 @@ public class MainActivity extends Activity {
             }
         });
 
-        // 자세유형분석으로 이동, 글꼴설정
-        btnPoseType = (TextView) findViewById(R.id.btnPoseType);
+        // 자세유형분석
+//        btnPoseType = (TextView) findViewById(R.id.btnPoseType);
+//        btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+//        btnPoseType.setOnClickListener(new Button.OnClickListener() {
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        btnPoseType = (Button)findViewById(R.id.btnPoseType);
         btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
-        btnPoseType.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+        btnPoseType.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Toast.makeText(getApplicationContext(), "콘텐츠를 준비중입니다.", Toast.LENGTH_SHORT).show();
             }
         });
 

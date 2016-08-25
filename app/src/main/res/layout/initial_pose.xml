@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:text="초기 자세를 설정하세요"
-        android:id="@+id/myInformation_textview"
+        android:id="@+id/initialpose_textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:textSize="20dp"
@@ -67,13 +67,24 @@
         android:background="@drawable/initial_pose">
 
         <Button
-            android:layout_width="273dp"
+            android:layout_width="166dp"
             android:layout_height="60dp"
             android:text=""
             android:id="@+id/initposebutton"
-            android:layout_gravity="center"
-            android:layout_marginTop="75dp"
-            android:background="@drawable/initial_pose_settingbutton"/>
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btninitialpose"
+            android:layout_marginLeft="30dp" />
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnPoseStart"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btnposestart"
+            android:layout_marginLeft="190dp" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -93,9 +104,6 @@
             android:textColor="#000000"
             android:layout_gravity="right|center_vertical"
             android:layout_marginTop="2dp">
-
-
-
 
         <RadioButton
             android:layout_width="wrap_content"
