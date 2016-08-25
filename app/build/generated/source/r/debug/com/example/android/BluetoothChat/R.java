@@ -970,10 +970,8 @@ containing a value of this type.
         public static final int initial_pose=0x7f04001d;
         public static final int main=0x7f04001e;
         public static final int message=0x7f04001f;
-        public static final int posetype=0x7f040020;
-        public static final int setting=0x7f040021;
-        public static final int start=0x7f040022;
-        public static final int support_simple_spinner_dropdown_item=0x7f040023;
+        public static final int setting=0x7f040020;
+        public static final int support_simple_spinner_dropdown_item=0x7f040021;
     }
     public static final class menu {
         public static final int option_menu=0x7f0e0000;

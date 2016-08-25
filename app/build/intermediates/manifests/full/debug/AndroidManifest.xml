@@ -35,7 +35,6 @@
             android:label="@string/select_device"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
-        <activity android:name="com.example.android.BluetoothChat.HomeActivity" />
         <activity
             android:name="com.example.android.BluetoothChat.SettingActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
@@ -45,8 +44,6 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
-        <activity android:name="com.example.android.BluetoothChat.PoseTypeAcitvity" />
-        <activity android:name="com.example.android.BluetoothChat.StartActivity" />
     </application>
 
 </manifest>

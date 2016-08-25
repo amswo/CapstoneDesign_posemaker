@@ -34,9 +34,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-    TextView btnInitialPose;
+    Button btnInitialPose;
     Button btnPoseType;
-    TextView btnSetting;
+    Button btnSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
         startActivity(new Intent(this, SplashActivity.class));
 
         // 초기자세설정으로 이동, 글꼴설정
-        btnInitialPose = (TextView) findViewById(R.id.btnInitialPose);
+        btnInitialPose = (Button) findViewById(R.id.btnInitialPose);
         btnInitialPose.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
         btnInitialPose.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
@@ -54,15 +54,6 @@ public class MainActivity extends Activity {
             }
         });
 
-        // 자세유형분석
-//        btnPoseType = (TextView) findViewById(R.id.btnPoseType);
-//        btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
-//        btnPoseType.setOnClickListener(new Button.OnClickListener() {
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), StartActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
         btnPoseType = (Button)findViewById(R.id.btnPoseType);
         btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
@@ -73,7 +64,7 @@ public class MainActivity extends Activity {
         });
 
         // 환경설정으로 이동, 글꼴설정
-        btnSetting = (TextView) findViewById(R.id.btnSetting);
+        btnSetting = (Button) findViewById(R.id.btnSetting);
         btnSetting.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
         btnSetting.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View view) {

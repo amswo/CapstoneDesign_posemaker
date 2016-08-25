@@ -9,11 +9,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -44,7 +47,6 @@ import java.util.List;
  * Created by user on 2016-08-22.
  */
 public class InitialPoseActivity extends Activity {
-
     TextView setting_textview;
     TextView initialpose_textview;
     TextView poseposition;
@@ -57,12 +59,19 @@ public class InitialPoseActivity extends Activity {
     public boolean btnStart = false;
     public int compareCnt = 0;
 
-    // 알람
-//    private Button btn2;
-//    private TextView time_info;
-//
-//    private Chronometer chronometer;
-//    private LinearLayout ll;
+    public int ax = 0;
+    public int ay = 0;
+    public int az = 0;
+
+    public boolean popup=false;
+
+    // alarm
+    SettingActivity setting = new SettingActivity();
+    int sound = setting.getSound();
+    int vib = setting.getVib();
+    Vibrator vide;
+    SoundPool pool;
+    int ddok;
 
     //DB
     private DBHelper dbHelper;
@@ -144,6 +153,13 @@ public class InitialPoseActivity extends Activity {
 
         setContentView(R.layout.initial_pose);
 
+        // alarm
+        vide=(Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        //sound
+        pool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        //ddok에 사운드를 로드함
+        ddok = pool.load(this, R.raw.smallsound, 1);
+
         setting_textview = (TextView) findViewById(R.id.setting_textView);
         setting_textview.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
 
@@ -169,59 +185,7 @@ public class InitialPoseActivity extends Activity {
             return;
         }
 
-
         dbCreate();
-
-        // alarm
-//        time_info = (TextView) findViewById(R.id.chronometer);
-//        btn2 = (Button) findViewById(R.id.buttonreset);
-//
-//        chronometer = (Chronometer) findViewById(R.id.chronometer);
-
-        // 1초 마다 실행되는 메소드
-        // 실행되는데 약간의 텀이 필요하기 때문에 정확하게 1초마다 실행하는데에 대한 부분은 장담못함.
-        // 그래도 거의 정확하게 실행.
-//        chronometer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
-//            public void onChronometerTick(Chronometer chronometer) {
-//                long elapseMills = SystemClock.elapsedRealtime() - chronometer.getBase();
-//                DecimalFormat numFormat = new DecimalFormat("###,###");
-//                String num = numFormat.format(30000);
-//                String output = numFormat.format(elapseMills);
-//                time_info.setText("Total sec : " + output);
-//
-//                if (output.startsWith("10")) {
-//                    AlertDialog.Builder dialog = new AlertDialog.Builder(InitialPoseActivity.this);
-//                    dialog.setTitle("올바르지 않은 자세를 30초간 유지했습니다.");
-//                    dialog.setMessage("다시한번 바르게 앉아주세요");
-//                    // OK 버튼 이벤트
-//                    dialog.setPositiveButton("예", new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int which) {
-//                        }
-//                    });
-//                    dialog.show();
-//                }
-//            }
-//        });
-//
-//        btn2.setOnClickListener(new Button.OnClickListener() {
-//            public void onClick(View v) {
-//                chronometer.stop();
-//                chronometer.setBase(SystemClock.elapsedRealtime());
-//            }
-//        });
-//
-
-
-//        button = (Button)findViewById(R.id.initposebutton);
-//
-//        button.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                CreateProgressDialog();
-//                ShowProgressDialog();
-//                //loading(v);
-//            }
-//        });
-
     }
 
     //로딩
@@ -264,11 +228,6 @@ public class InitialPoseActivity extends Activity {
         }).start();
     }
 
-//    public void alarmStart() {
-//        chronometer.setBase(SystemClock.elapsedRealtime());
-//        chronometer.start();
-//    }
-
     // DB 생성을 위한 함수
     public void dbCreate() {
         final String etDBName = "datatest"; // DB 이름
@@ -281,9 +240,9 @@ public class InitialPoseActivity extends Activity {
         LinearLayout layout = new LinearLayout(InitialPoseActivity.this);
         layout.setOrientation(LinearLayout.VERTICAL);
 
-        int ax = initAx;
-        int ay = initAy;
-        int az = initAz;
+        ax = initAx;
+        ay = initAy;
+        az = initAz;
 
         if (dbHelper == null) {
             dbHelper = new DBHelper(InitialPoseActivity.this, "TEST", null, 1);
@@ -349,6 +308,10 @@ public class InitialPoseActivity extends Activity {
                 Log.d("TX", "자세교정시작 START");
                 sendMessage1((byte) 'a');
                 btnStart = true;
+
+                if(ax == 0 && ay == 0 && az == 0) {
+                    Toast.makeText(getApplicationContext(), "초기자세를 먼저 설정해주세요", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
@@ -459,6 +422,7 @@ public class InitialPoseActivity extends Activity {
                                     num3 = Integer.parseInt(sData[2]);
                                     calculate(num1, num2, num3);
 
+
                                     if(btnStart){
                                         compareDif(num1,num2,num3);
                                     }
@@ -478,7 +442,6 @@ public class InitialPoseActivity extends Activity {
 
                     break;
 
-
                 //mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
                 case MESSAGE_DEVICE_NAME:
                     // save the connected device's name
@@ -495,20 +458,42 @@ public class InitialPoseActivity extends Activity {
     };
 
 
-    // 비교
-    public void compareDif(int num1, int num2, int num3){
+    // 좋은 자세인지 안좋은 자세인지 비교
+    public void compareDif(int num1, int num2, int num3) {
         difAx = Math.abs(initAx - num1);
         difAy = Math.abs(initAy - num2);
         difAz = Math.abs(initAz - num3);
 
-        Log.d("RX:", "difAx:" + difAx +", difAy:"+ difAy+", difAz:"+difAz);
+        Log.d("RX:", "difAx:" + difAx + ", difAy:" + difAy + ", difAz:" + difAz);
 
-        if(difAx>=50 && difAy>=25 && difAz>=230){
-            Toast.makeText(getApplicationContext(), "자세를 바르게 앉으세요", Toast.LENGTH_SHORT).show();
+        // 자세범위확인
+        if (difAx >= 50 && difAy >= 25 && difAz >= 230) {
+            compareCnt++;
 
+            Log.d("RX:", "compareCnt: " + compareCnt);
+
+            // 안좋은 자세가 10초이상 유지될 경우
+            if (compareCnt >= 10 && popup == false) {
+                popup = true;
+                new AlertDialog.Builder(this).setMessage("자세를 바르세 앉으세요")
+                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                //Log.e(TAG, "확인 클릭");
+                                dialog.dismiss();
+                                popup = false;
+                            }
+                        }).show();
+                if (sound == 1) {
+                    pool.play(ddok, 1, 1, 0, 0, 1f);
+                }
+                if (vib == 1) {
+                    vide.vibrate(500);
+                }
+            }
+        }else{
+            compareCnt = 0;
         }
     }
-
 
     // 초기값을 위한 계산함수
     public void calculate (int cnum1, int cnum2, int cnum3){
@@ -521,7 +506,7 @@ public class InitialPoseActivity extends Activity {
         if(cnt==10){
             initAx = SumAx/cnt;
             initAy = SumAy/cnt;
-            initAz = SumAz / cnt;
+            initAz = SumAz/cnt;
 
 //            ((TextView) findViewById(R.id.tv_Data)).setText(String.format("%6d", cnt) + String.format("%6d", initAx) +
 //                    String.format("%6d", initAy) + String.format("%6d", initAz));
