@@ -47,6 +47,12 @@ import java.util.List;
  * Created by user on 2016-08-22.
  */
 public class InitialPoseActivity extends Activity {
+    public int typeCnt = 0;
+    public int good = 0;
+    public int bad = 0;
+    public int totalgood = 0;
+    public int totalbad = 0;
+
     TextView setting_textview;
     TextView initialpose_textview;
     TextView poseposition;
@@ -187,6 +193,10 @@ public class InitialPoseActivity extends Activity {
 
         dbCreate();
     }
+
+
+    public int getTotalgood(){ return totalgood; }
+    public int getTotalbad(){ return totalbad; }
 
     //로딩
     public void CreateProgressDialog() {
@@ -353,7 +363,17 @@ public class InitialPoseActivity extends Activity {
     public void onDestroy() {
         super.onDestroy();
         // Stop the Bluetooth chat services
-        if (mChatService != null) mChatService.stop();
+
+
+        typeCnt = totalgood + totalbad;
+        good = 0;
+        bad = 0;
+
+
+        if (mChatService != null){
+
+            mChatService.stop();
+        }
         if (mChatService2 != null) mChatService2.stop();
     }
 
@@ -425,6 +445,7 @@ public class InitialPoseActivity extends Activity {
 
                                     if(btnStart){
                                         compareDif(num1,num2,num3);
+
                                     }
 
                                     strRxData = "";
@@ -472,10 +493,13 @@ public class InitialPoseActivity extends Activity {
 
             Log.d("RX:", "compareCnt: " + compareCnt);
 
+            bad++;
+            totalbad = bad;
+
             // 안좋은 자세가 10초이상 유지될 경우
             if (compareCnt >= 10 && popup == false) {
                 popup = true;
-                new AlertDialog.Builder(this).setMessage("자세를 바르세 앉으세요")
+                new AlertDialog.Builder(this).setMessage("자세를 바르게 앉으세요")
                         .setPositiveButton("확인", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 //Log.e(TAG, "확인 클릭");
@@ -492,6 +516,8 @@ public class InitialPoseActivity extends Activity {
             }
         }else{
             compareCnt = 0;
+            good ++;
+            totalgood = good;
         }
     }
 

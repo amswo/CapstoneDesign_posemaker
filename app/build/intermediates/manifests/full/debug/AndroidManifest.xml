@@ -39,6 +39,7 @@
             android:name="com.example.android.BluetoothChat.SettingActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity android:name="com.example.android.BluetoothChat.InitialPoseActivity" />
+        <activity android:name="com.example.android.BluetoothChat.PoseTypeActivity" />
         <activity
             android:name="com.example.android.BluetoothChat.SplashActivity"
             android:configChanges="orientation|keyboardHidden"

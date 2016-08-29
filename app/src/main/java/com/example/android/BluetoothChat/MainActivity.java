@@ -55,11 +55,20 @@ public class MainActivity extends Activity {
         });
 
 
+//        btnPoseType = (Button)findViewById(R.id.btnPoseType);
+//        btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
+//        btnPoseType.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View view){
+//                Toast.makeText(getApplicationContext(), "콘텐츠를 준비중입니다.", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
         btnPoseType = (Button)findViewById(R.id.btnPoseType);
         btnPoseType.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/HANYGO230.ttf"));
         btnPoseType.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Toast.makeText(getApplicationContext(), "콘텐츠를 준비중입니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), PoseTypeActivity.class);
+                startActivity(intent);
             }
         });
 

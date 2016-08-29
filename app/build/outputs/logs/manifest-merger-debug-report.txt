@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-47:12
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:3:1-48:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:4:5-48
 		INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml
@@ -28,7 +28,7 @@ ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\A
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:12:22-63
 application
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:16:5-45:19
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:16:5-46:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml:17:5-19
 	android:label
@@ -79,16 +79,20 @@ activity#com.example.android.BluetoothChat.InitialPoseActivity
 ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:40:9-66
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:40:19-54
-activity#com.example.android.BluetoothChat.SplashActivity
-ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:9-44:63
-	android:screenOrientation
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:42:13-49
-	android:configChanges
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:43:13-63
-	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:44:13-60
+activity#com.example.android.BluetoothChat.PoseTypeActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:9-63
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:19-49
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:41:19-51
+activity#com.example.android.BluetoothChat.SplashActivity
+ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:42:9-45:63
+	android:screenOrientation
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:43:13-49
+	android:configChanges
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:44:13-63
+	android:theme
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:45:13-60
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml:42:19-49
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:20.0.0] C:\Users\user\AndroidStudioProjects\kalman_app2\kalman\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:16:5-42

@@ -253,7 +253,7 @@ int drawable login 0x7f020063
 int drawable new2 0x7f020064
 int drawable pose 0x7f020065
 int drawable text 0x7f020066
-int id V_textView 0x7f0d0057
+int id V_textView 0x7f0d0058
 int id action_bar 0x7f0d001c
 int id action_bar_activity_content 0x7f0d0000
 int id action_bar_container 0x7f0d001b
@@ -267,7 +267,7 @@ int id action_menu_presenter 0x7f0d0002
 int id action_mode_close_button 0x7f0d0024
 int id activity_chooser_view_content 0x7f0d0025
 int id always 0x7f0d0013
-int id app_textView 0x7f0d0054
+int id app_textView 0x7f0d0055
 int id beginning 0x7f0d000f
 int id btnInitialPose 0x7f0d004c
 int id btnPoseStart 0x7f0d0048
@@ -279,7 +279,7 @@ int id collapseActionView 0x7f0d0014
 int id default_activity_button 0x7f0d0028
 int id dialog 0x7f0d0018
 int id disableHome 0x7f0d0009
-int id discoverable 0x7f0d0059
+int id discoverable 0x7f0d005a
 int id dropdown 0x7f0d0019
 int id edit_query 0x7f0d0030
 int id end 0x7f0d0010
@@ -292,10 +292,11 @@ int id ifRoom 0x7f0d0015
 int id image 0x7f0d0027
 int id imageView3 0x7f0d0045
 int id imageView4 0x7f0d0046
-int id imageView5 0x7f0d0053
-int id imageView6 0x7f0d0055
+int id imageView5 0x7f0d0054
+int id imageView6 0x7f0d0056
 int id initialpose_textView 0x7f0d0044
 int id initposebutton 0x7f0d0047
+int id layout 0x7f0d004f
 int id listMode 0x7f0d0006
 int id list_item 0x7f0d0029
 int id middle 0x7f0d0011
@@ -308,7 +309,7 @@ int id poseposition_view 0x7f0d0049
 int id progress_circular 0x7f0d0004
 int id progress_horizontal 0x7f0d0005
 int id radio 0x7f0d002f
-int id scan 0x7f0d0058
+int id scan 0x7f0d0059
 int id search_badge 0x7f0d0032
 int id search_bar 0x7f0d0031
 int id search_button 0x7f0d0033
@@ -325,8 +326,8 @@ int id shoulder 0x7f0d004a
 int id showCustom 0x7f0d000b
 int id showHome 0x7f0d000c
 int id showTitle 0x7f0d000d
-int id sound_textView 0x7f0d004f
-int id sound_toggleButton 0x7f0d0050
+int id sound_textView 0x7f0d0050
+int id sound_toggleButton 0x7f0d0051
 int id split_action_bar 0x7f0d001e
 int id submit_area 0x7f0d0039
 int id tabMode 0x7f0d0008
@@ -338,9 +339,9 @@ int id title_right_text 0x7f0d003d
 int id top_action_bar 0x7f0d0020
 int id up 0x7f0d0021
 int id useLogo 0x7f0d000e
-int id version_textView 0x7f0d0056
-int id vibration_textView 0x7f0d0051
-int id vibration_toggleButton 0x7f0d0052
+int id version_textView 0x7f0d0057
+int id vibration_textView 0x7f0d0052
+int id vibration_toggleButton 0x7f0d0053
 int id waist 0x7f0d004b
 int id withText 0x7f0d0017
 int integer abc_max_action_buttons 0x7f0b0000
@@ -375,8 +376,9 @@ int layout device_name 0x7f04001b
 int layout initial_pose 0x7f04001c
 int layout main 0x7f04001d
 int layout message 0x7f04001e
-int layout setting 0x7f04001f
-int layout support_simple_spinner_dropdown_item 0x7f040020
+int layout posetype 0x7f04001f
+int layout setting 0x7f040020
+int layout support_simple_spinner_dropdown_item 0x7f040021
 int menu option_menu 0x7f0e0000
 int mipmap app_icon 0x7f030000
 int raw beep 0x7f060000

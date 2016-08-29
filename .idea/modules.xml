@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junit-3.8.1/junit-3.8.1.iml" filepath="$PROJECT_DIR$/junit-3.8.1/junit-3.8.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/kalman.iml" filepath="$PROJECT_DIR$/kalman.iml" />
     </modules>
   </component>

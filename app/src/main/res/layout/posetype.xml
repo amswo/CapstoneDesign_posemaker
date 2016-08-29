@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layout">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AChartEngine - PieChart Sample"
+        android:textSize="20sp" />
+    [출처] [안드로이드] AChartEngine을 이용한 차트 만들기 - (예제: 파이차트 그리기)|작성자 자바킹
+
+
+
+</LinearLayout>
